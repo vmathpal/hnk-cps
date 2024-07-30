@@ -1,0 +1,29 @@
+.app-content {
+  margin-top: 10px;
+}
+.app-auth-sign-in .app-auth-background {
+  height: 100vh;
+}
+.not-found-page {
+  height: 100vh;
+}
+.department {
+  display: flex;
+}
+
+.example-content-date .table td {
+  padding: 10px !important;
+}
+
+.example-content-date.newDate {
+  border-right: 1px solid #000;
+  margin: 0px 10px 0px 0px;
+}
+.table-width td,
+.table-width th {
+  min-width: 80px !important;
+}
+.assignProject {
+  color: green;
+  cursor: pointer;
+}

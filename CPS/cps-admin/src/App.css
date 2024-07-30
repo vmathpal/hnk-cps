@@ -1,0 +1,204 @@
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #188cda; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.app-auth-container .logo a {
+  background-size: 100px !important;
+
+
+}
+.app-sidebar .logo .logo-icon {
+  width: 76px !important;
+  background-size: 70px !important;
+  border-radius: 10px!important;
+}
+.app-sidebar .logo {
+  padding: 29px 28px !important;
+}
+div.dataTables_wrapper div.dataTables_filter {
+  padding: 5px !important;
+}
+.custom-pagination .pagination{
+  float: right;
+}
+.error-border{
+  animation: shake 0.2s ease-in-out 0s 2;
+  border-color: red;
+
+}
+
+@keyframes shake {
+  0% { margin-left: 0rem; }
+  25% { margin-left: 0.5rem; }
+  75% { margin-left: -0.5rem; }
+  100% { margin-left: 0rem; }
+}
+
+.icon-input {
+  position: relative;
+}
+
+.icon-input .fa-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% - 35px);
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+
+}
+
+.icon-input .fa-eye-slash {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% - 35px);
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+
+}
+
+.icon-input .form-control {
+  padding-right: 45px;
+}
+
+.app-menu .active{
+  color: #2269f5 !important;
+}
+
+.app-menu .active .material-icons-two-tone{
+  filter: invert(34%) sepia(23%) saturate(3309%) hue-rotate(195deg) brightness(109%) contrast(115%);
+}
+
+.app-auth-sign-in .app-auth-background{
+  background-image: linear-gradient(
+    -90deg
+    , rgba(36, 36, 209, 0.199), transparent), url('../public/assets/images/backgrounds/sign-in.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center !important;
+}
+.app-auth-container{
+  width: 55%;
+}
+.sign-in-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.react-tabs__tab--selected {
+  background: #e7ecf8 !important;
+  border-color: #e7ecf8 !important;
+
+}
+.app-auth-container .logo a {
+  background: url(../public/assets/images/neptune.svg) no-repeat !important;
+  min-height: 70px;
+  width: 200px;
+  background-size: contain !important;
+}
+.app-sidebar .logo .logo-icon {
+  background: url(../public/assets/images/neptune.svg) no-repeat !important;
+  background-size: contain !important;
+}
+.app-auth-sign-in .logo {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+}
+.dt-buttons{
+  display: none;
+}
+.users .dt-buttons{
+  display: block;
+}
+button.dt-button.buttons-csv.buttons-html5 {
+  float: left;
+  margin-top: 12px;
+  color: #fff;
+  background-color: #61acfc;
+  border-color: #61acfc;
+  /* display: inline-block; */
+  padding: 3px 15px;
+ 
+  font-size: 12px;
+}
+.app-content .page-description {
+  padding: 20px !important;
+  margin-bottom: 20px !important;
+}
+.captcha-generate-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.captcha-generate-wrapper .fa.fa-refresh {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #2269f5;
+  cursor: pointer;
+}
+.form-check-input.checked-class{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e") !important;
+  background-color: #2269f5;
+  border-color: #2269f5;
+}
+
+.LoadBtnBox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.rowTitle {
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-bottom: 12px;
+}
+
+.projectInfo-Row {
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.ExportSearchBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-md-4.button .LoadBtnBox {
+  align-items: flex-end;
+}
+
+.project-info .LoadBtnBox button.btn.btn-info:nth-child(2){
+  bottom: 0;
+}

@@ -1,0 +1,5696 @@
+/* Required Fonts  */
+
+@font-face {
+  font-family: HEINEKEN Curve;
+  src: url("../fonts/HEINEKEN\ Core.ttf");
+}
+
+@font-face {
+  font-family: HEINEKEN-Bold;
+  src: url("../fonts/HEINEKEN\ Curve-SemiBold.otf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "HEINEKEN Curve";
+}
+
+:focus,
+:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Utility (Common) CSS  */
+
+p {
+  margin-bottom: 3px !important;
+}
+
+ol.breadcrumb {
+  margin-bottom: 0px;
+}
+
+.accordian-head-first {
+  display: flex;
+  align-items: center;
+}
+
+.accordian-head-first input {
+  margin-left: 10px;
+}
+
+.accordian-head-first span {
+  font-family: "HEINEKEN-Bold";
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.main-box {
+  background: #f9f9f9;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/minus.svg) !important;
+}
+
+.accordion-button::after {
+  background-image: url(../images/plus.svg) !important;
+}
+
+.accordion-button {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  border: 1px solid #eaeaea !important;
+  border-radius: 7px !important;
+}
+
+.form-header .row > * {
+  width: unset !important;
+}
+
+.form-header .row {
+  width: 60%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.form-header .row p {
+  margin: 0px 30px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  background: #f9f9f9;
+}
+
+.form-header h3 {
+  font-family: "HEINEKEN-Bold";
+  margin: 0;
+}
+
+.copy-input input {
+  width: 297px;
+  padding-left: 30px;
+}
+
+.copy-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.copy-input img {
+  width: 13px;
+  margin-left: 8px;
+}
+
+.copy-input::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/copy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 6px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.ui-sortable {
+  padding-left: 0 !important;
+  margin: 0;
+}
+
+#sortable .ui-sortable-handle {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 15px !important;
+  justify-content: flex-start !important;
+  border: 0 !important;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+#sortable .ui-sortable-handle .ui-icon {
+  position: relative;
+  display: block;
+  background-image: none;
+  margin-right: 10px;
+}
+
+#sortable .ui-sortable-handle .ui-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 2px;
+  width: 14px;
+  margin-right: 10px;
+  background: #9a9a9a;
+  box-shadow: 0 4.5px 0 0 #9a9a9a;
+  cursor: pointer;
+}
+
+#sortable .ui-sortable-handle svg {
+  background: #f0f0f0;
+  height: 14px;
+  width: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-18 {
+  font-size: 18px !important;
+  line-height: 20px;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.copy {
+  font-size: 18px !important;
+  line-height: 20px;
+  color: #eaf1f1f8;
+  background-color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.item-wrapper {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-evenly;
+  min-width: 800px;
+}
+
+.blue-select .css-b62m3t-container {
+  max-width: 200px;
+}
+
+.blue-select .css-1pahdxg-control,
+.blue-select .css-1s2u09g-control {
+  background-color: #0f2f81;
+  color: #fff !important;
+  min-width: 199px;
+}
+
+.blue-select .css-qc6sy-singleValue,
+.blue-select .css-6j8wv5-Input input {
+  color: #fff !important;
+}
+
+.customTimeline ul {
+  position: relative;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.customTimeline ul:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 88%;
+  background-color: #e8e8e8;
+}
+
+.customTimeline ul li {
+  position: relative;
+  list-style: none;
+  padding: 0 7px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.customTimeline ul li:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #12ac2b;
+  cursor: pointer;
+}
+
+.customTimeline ul li p {
+  font-size: 10px;
+  line-height: 11px;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  white-space: nowrap;
+  margin-bottom: 0 !important;
+}
+
+.customTimeline ul li.active::before {
+  background: #ff2e57;
+}
+
+.content-area {
+  padding: 26px 22px;
+  min-height: calc(100vh - 80px);
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.content-area .top-bar {
+  margin-bottom: 20px;
+}
+
+.content-area .top-bar a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all linear;
+}
+
+.content-area .top-bar #backButton {
+  height: 15px;
+  width: 15px;
+  display: block;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+
+.content-area .top-bar h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  cursor: pointer;
+}
+
+.content-area .page-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 29px;
+}
+
+.content-area .page-title h4 {
+  font-size: 18px;
+  line-height: 1.25em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content-area .page-title b {
+  font-size: 15px;
+  line-height: 1em;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.content-area .page-title b span {
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #000;
+  font-weight: 100;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+/* Utility (Common) CSS End */
+
+/* Navbar */
+
+.navbar.row {
+  position: sticky;
+  top: 0;
+  min-height: 73px;
+  width: 100%;
+  background: #fff;
+  margin: 0 !important;
+  padding: 16px 22px !important;
+  box-shadow: 5px 3px 6px #00000029;
+  z-index: 1000;
+}
+
+.navbar.row .nav-left {
+  padding-right: 12px;
+  text-align: left;
+}
+
+.navbar.row .nav-left .admin-name {
+  color: #0f2f81;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.navbar.row .nav-left .designation {
+  color: #a3a3a3;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin: 0;
+}
+
+.navbar.row .nav-middle {
+  padding-right: 12px;
+}
+
+.navbar.row .nav-middle .searchbox-wrapper {
+  position: relative;
+  max-width: 320px;
+  height: 40px;
+  width: 100%;
+}
+
+.navbar.row .nav-middle .searchbox-wrapper .admin-search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #e5e5e5;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  padding: 5px 30px 5px 17px;
+}
+
+.navbar.row .nav-middle .searchbox-wrapper .admin-search:focus {
+  outline: none;
+}
+
+.navbar.row .nav-middle .searchbox-wrapper .admin-search::placeholder {
+  color: #a3a3a3;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.navbar.row .nav-middle .searchbox-wrapper img {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  cursor: pointer;
+}
+
+.navbar.row .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 22px;
+}
+
+.navbar.row .nav-right a:not(:last-child) {
+  margin-right: 17px;
+  text-align: center;
+}
+
+.navbar.row .nav-right .button {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 40px;
+  max-width: 170px;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  background: #0f2f81;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar.row .nav-right .button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #ee8a21;
+  transition: 0.3s all linear;
+}
+
+.navbar.row .nav-right .button:hover::before {
+  width: 100%;
+}
+
+.navbar.row .nav-right .icon {
+  height: 38px;
+  width: 38px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #f4f9ff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.navbar.row .nav-right .profile-wrapper {
+  position: relative;
+}
+
+.navbar.row .nav-right .profile-wrapper a {
+  margin-right: 0 !important;
+  text-align: left;
+  transition: 0.3s all linear;
+}
+
+.navbar.row .nav-right .profile-wrapper a:hover {
+  background: #0f2f81;
+  color: #fff;
+}
+
+.navbar .nav-right .profile-wrapper {
+  position: relative;
+}
+
+.navbar .nav-right .profile-wrapper a {
+  margin-right: 0 !important;
+}
+
+.navbar.row .nav-right .profile-img {
+  box-shadow: none;
+  background: #0f2f81;
+  text-decoration: none;
+  margin-right: 8px !important;
+}
+
+.navbar.row .nav-right .profile-img .profile-image-holder {
+  color: #fff;
+  font-size: 17px;
+  line-height: 19px;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.navbar.row .nav-right .drop-down-items {
+  position: absolute;
+  left: 25px;
+  top: 56%;
+  transform: translateY(-50%);
+}
+
+.navbar.row .nav-right .drop-down-items .dropdown-toggle {
+  opacity: 0;
+  padding: 0;
+  left: 16px;
+}
+
+.navbar.row .nav-right .drop-down-items .dropdown-menu {
+  margin-top: 17px;
+  padding: 0;
+}
+
+.navbar.row .nav-right .dropdown-item.active,
+.dropdown-item:active {
+  background: none;
+  color: #000;
+}
+
+.navbar .nav-right .dropdown-icon {
+  position: absolute;
+  top: 35%;
+  left: 45px;
+  height: 6px;
+  width: 6px;
+  border-left: 2px solid #bababa;
+  border-top: 2px solid #bababa;
+  transform: rotate(223deg) translateY(-50%);
+  cursor: pointer;
+}
+
+/* Navbar CSS End  */
+
+/* Login CSS*/
+
+.login {
+  height: 100vh;
+  width: 100%;
+}
+
+.login .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  height: 100vh;
+}
+
+.login .row .col-md-6:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.login .row .col-md-6 .login-form-container {
+  max-width: 491px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+.login .row .col-md-6 .login-form-container .login-head {
+  height: 100px;
+  max-width: 168px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login .row .col-md-6 .login-form-container .login-head img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.login .row .col-md-6 .login-form-container .login-form-head .form-heading h3 {
+  font-size: 27px;
+  line-height: 45px;
+  color: #32363c;
+  font-weight: 600;
+  text-align: center;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  margin: 22px 0;
+}
+
+.login .row .col-md-6 .login-form-container .login-form-head .form-heading p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.login .row .col-md-6 .login-form-container .login-form .main-form .mb-3 {
+  text-align: left;
+}
+
+.login .row .col-md-6 .login-form-container .login-form .main-form .form-label {
+  font-size: 18px;
+  color: #444f5e;
+  font-family: "HEINEKEN Curve", sans-serif;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.login .row .col-md-6 .login-form-container .login-form .main-form input {
+  height: 64px;
+  border-radius: 0;
+  transition: 0.3s all ease-in-out;
+  border: 1px solid #e7ecf7;
+  margin-bottom: 25px;
+}
+
+.login .row .col-md-6 .login-form-container .login-form .main-form input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #e7ecf7;
+  border-bottom: 3px solid #ee8a21;
+}
+
+.login .row .col-md-6 .login-form-container .login-form .main-form .icon-input {
+  position: relative;
+  height: 64px;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .icon-input
+  .form-control {
+  position: absolute;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .toggle-password
+  .fa {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .toggle-password
+  .fa-eye {
+  background: url("../images/eye.svg") no-repeat center;
+  background-size: 20px;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .toggle-password
+  .fa-eye-slash {
+  background: url("../images/close-eye.png") no-repeat center;
+  background-size: 20px;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .forgot-pass-link {
+  font-size: 17px;
+  line-height: 59px;
+  color: #444f5e;
+  transition: 0.3s all linear;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .forgot-pass-link:hover {
+  color: #ee8a21;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .login-btn-box {
+  margin-bottom: 23px;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .login-btn-box
+  button {
+  position: relative;
+  max-width: 256px;
+  width: 100%;
+  height: 50px;
+  background: #0f2f81;
+  border-radius: 6px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .login-btn-box
+  button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #ee8a21;
+  transition: 0.3s all ease-in-out;
+}
+
+.login
+  .row
+  .col-md-6
+  .login-form-container
+  .login-form
+  .main-form
+  .login-btn-box
+  button:hover:before {
+  width: 100%;
+}
+
+.login .row .col-md-6 .right-box {
+  position: relative;
+  height: 100%;
+  width: auto;
+}
+
+.login .row .col-md-6 .right-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login .row .col-md-6 .right-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 240px;
+  width: 100%;
+  background-image: linear-gradient(0deg, #000, transparent);
+  z-index: 1;
+}
+
+/* Login CSS End */
+
+/* Sidebar */
+
+.main .sidebar-container {
+  min-height: 100vh;
+  max-width: 213px;
+  width: 100%;
+  background: #fff;
+  padding: 23px 17px;
+}
+
+.main .sidebar-container .sidebar {
+  position: fixed;
+  height: 100%;
+  max-width: 180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sidebar .brand-logo {
+  position: relative;
+  height: 54px;
+  max-width: 95px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.sidebar .brand-logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sidebar .navigations {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sidebar .navigations .nav-link a {
+  display: block;
+  height: 35px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  transition: 0.3s all linear;
+}
+
+.sidebar .navigations .nav-link:hover,
+.sidebar .navigations .nav-link a.active {
+  background: #f4f9ff;
+}
+
+.sidebar .navigations .nav-link a {
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5f5f5f;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.sidebar .navigations .nav-link a.active {
+  color: #0f2f81;
+}
+
+.sidebar .navigations .nav-link a:not(.active) img {
+  filter: grayscale(2);
+}
+
+.blue-select .css-1pndypt-Input {
+  color: white;
+}
+
+.sidebar .navigations .nav-link a.active img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(27%) saturate(6503%)
+    hue-rotate(219deg) brightness(94%) contrast(104%);
+}
+
+.sidebar .navigations .nav-link a img {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.sidebar .logout {
+  position: absolute;
+  height: 34px;
+  max-width: 162px;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar .logout .nav-link {
+  display: block;
+  height: 35px;
+  line-height: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-align: left;
+  width: 100%;
+  transition: 0.3s all linear;
+}
+
+.sidebar .logout .nav-link:hover,
+.sidebar .logout .nav-link.active {
+  background: #f4f9ff;
+}
+
+.sidebar .logout .nav-link a {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-size: 13px;
+  line-height: 15px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  transition: 0.3s all linear;
+}
+
+.sidebar .logout li:hover .nav-link a {
+  color: #0f2f81;
+}
+
+.sidebar .logout .nav-link a img {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+  object-fit: contain;
+  transform: rotate(90deg);
+  opacity: 0.4;
+}
+
+/* Sidebar CSS End */
+
+/* Overview Page CSS*/
+
+.main_wrapper {
+  width: 100%;
+}
+
+.main_wrapper .right-contents {
+  width: 100%;
+}
+
+li.breadcrumb-item:nth-child(odd) {
+  background: green;
+  padding: 7px;
+  width: 100px;
+  height: 40px;
+  z-index: 1;
+}
+
+li.breadcrumb-item:nth-child(even) {
+  padding: 7px;
+  width: 128px;
+  height: 40px;
+  right: 0;
+  border: 0.5px solid #dddddd;
+  color: #9a9a9a;
+}
+
+li.breadcrumb-item:nth-child(even) a {
+  color: #9a9a9a;
+}
+
+li.breadcrumb-item:nth-child(odd) a {
+  color: #fff;
+}
+
+li.breadcrumb-item:nth-child(odd):after {
+  content: "";
+  background: green;
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border-top: 2px solid green;
+  border-right: 2px solid green;
+  transform: rotate(45deg);
+  left: calc(100% - 15px);
+  top: 6px;
+}
+
+li.breadcrumb-item {
+  position: relative;
+}
+
+li.breadcrumb-item img {
+  margin-right: 8px;
+}
+
+li.breadcrumb-item a {
+  font-size: 10px;
+  font-family: "HEINEKEN-Bold";
+}
+
+li.breadcrumb-item a:nth-child(odd) {
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.approval-status {
+  width: 100%;
+  padding: 26px 22px;
+  background: #f9f9f9;
+}
+
+.approval-status .approval-status-container {
+  border-radius: 4px;
+  background-color: #f5fcff;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+.approval-status .flex.row {
+  margin: 0;
+  margin-bottom: 13px;
+  width: 100%;
+}
+
+.approval-status .title-one {
+  width: 50%;
+  padding: 0;
+}
+
+.approval-status .dropdown {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.approval-status .dropdown .dropdown-menu {
+  padding: 0;
+  overflow: hidden;
+}
+
+.approval-status .dropdown .dropdown-menu .dropdown-item:hover {
+  background: #0f2f81;
+  color: #fff;
+}
+
+.approval-status .dropdown.all-request .dropdown .dropdown-toggle {
+  height: 38px;
+  max-width: 137px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+  font-size: 13px;
+  line-height: 0.7em;
+  color: #a3a3a3;
+}
+
+.approval-status .dropdown.all-request .dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.approval-status .title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4em;
+  /* font-weight: 600; */
+  font-family: "HEINEKEN CURVE", sans-serif;
+  text-align: left;
+}
+
+.approval-status .title .heading {
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.approval-status .approval-status-container .approval-status-card {
+  padding: 21px;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info {
+  width: 30%;
+  text-align: left;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info
+  .project-title
+  h3 {
+  font-size: 15px;
+  line-height: 1.1em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info
+  .project-title
+  h3
+  span {
+  border-radius: 15px;
+  margin-left: 7px;
+  background: #c3fff1;
+  color: #26af8f;
+  font-size: 10px;
+  padding: 5px 10px;
+  line-height: 1em;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card:nth-child(2)
+  .project-info
+  .project-title
+  h3
+  span {
+  background: #c9e0ff;
+  color: #0f2f81;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info
+  .project-subtitle
+  h4 {
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info
+  .date
+  p {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #a3a3a3;
+  margin: 0;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .timeline-holder {
+  min-height: 30px;
+  width: 70%;
+}
+
+.approval-status-card .timeline-holder .timeline {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.approval-status-card .timeline-holder .timeline li {
+  list-style: none;
+  display: inline-block;
+  min-height: 30px;
+  max-width: 250px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 0 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.approval-status-card .timeline-holder .timeline li:before {
+  content: "";
+  counter-increment: step;
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background: url("../images/Group\ 2355.svg") no-repeat center;
+  background-size: 22px;
+}
+
+.approval-status-card .timeline-holder .timeline li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  top: 10px;
+  left: -50%;
+  z-index: -1;
+}
+
+.approval-status-card .timeline-holder .timeline li:first-child:after {
+  content: none;
+}
+
+.approval-status-card .timeline-holder .timeline li.active:before {
+  background: url("../images//bcheck.svg") no-repeat center;
+  background-size: 22px;
+}
+
+.approval-status-card .timeline-holder .timeline li.pending:before {
+  background: url("../images/Pending.png") no-repeat center;
+  background-size: 25px;
+}
+
+.approval-status-card .timeline-holder .timeline li.rejected:before {
+  background: url("../images/rejected1.png") no-repeat center;
+  background-size: 25px;
+}
+
+.approval-status-card .timeline-holder .progressbar li.active + li:after {
+  background-color: green;
+}
+
+.approval-status-card .timeline-holder .timeline li:hover .tooltip-info {
+  display: block;
+}
+
+.approval-status-card .timeline-holder .timeline li .timeline-title {
+  margin-top: -45px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 0.8em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.approval-status-card .timeline-holder .tooltip-info {
+  position: absolute;
+  top: 100%;
+  right: 45px;
+  min-width: 175px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  padding: 6px;
+  background: #ffeaea;
+  box-shadow: 0 3px 6px #00000029;
+  display: none;
+}
+
+.approval-status-card .timeline-holder .tooltip-info p {
+  white-space: pre-wrap;
+}
+
+.approval-status-card .timeline-holder .tooltip-info::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  top: -4px;
+  right: 20px;
+  background: #ffeaea;
+}
+
+.approval-status-card .timeline-holder .tooltip-info p {
+  font-size: 10px;
+  line-height: 1.25em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #de3939;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.approval-status-card .timeline-holder .tooltip-info p button {
+  display: block;
+  font-size: 9px;
+  line-height: 0.6em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #0f2f81;
+  text-align: right;
+  background: none;
+  border: none;
+  margin-top: -7px;
+  margin-right: 0;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.approval-status .project-in-exec {
+  margin-top: 22px;
+  padding: 13px 21px;
+  box-shadow: 0 3px 6px #00000029;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.project-info .button {
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 6px 10px !important;
+}
+
+.approval-status .project-in-exec .header .title .heading {
+  font-size: 17px !important;
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 600;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-bottom: 20px;
+}
+
+.approval-status
+  .project-in-exec
+  .header
+  .search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.approval-status
+  .project-in-exec
+  .header
+  .search-container
+  input[type="search"] {
+  height: 38px;
+  max-width: 236px;
+  width: 100%;
+  border-radius: 7px;
+  padding: 10px 14px;
+  border: 1px solid #e8e8e8;
+}
+
+.approval-status
+  .project-in-exec
+  .header
+  .search-container
+  input[type="search"]:focus {
+  outline: none;
+}
+
+.approval-status
+  .project-in-exec
+  .header
+  .search-container
+  input[type="search"]::placeholder {
+  font-size: 13px;
+  line-height: 1em;
+  color: #a3a3a3;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.approval-status .project-in-exec .header .search-container img {
+  right: 13px;
+  cursor: pointer;
+}
+
+.approval-status .project-in-exec .execution {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.approval-status .project-in-exec .execution p {
+  font-size: 12px;
+  line-height: 0.8em;
+  color: #000;
+  margin: 0 !important;
+  display: flex;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.approval-status .project-in-exec .execution .indicator {
+  height: 13px;
+  display: inline-block;
+  width: 13px;
+  margin: -2px 7px;
+  border-radius: 50%;
+  background: #6590ff;
+}
+
+.approval-status .project-in-exec .execution .dropdown {
+  justify-content: flex-start;
+}
+
+.approval-status .project-in-exec .execution .dropdown .dropdown-toggle {
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 12px;
+  line-height: 0.8em;
+  color: #000;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.dropdown-toggle::after {
+  border: none !important;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-bottom: 2px solid #bababa !important;
+  border-right: 2px solid #bababa !important;
+  transform: rotate(45deg);
+}
+
+.approval-status .project-in-exec .execution .dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.approval-status .project-in-exec .execution .dropdown .dropdown-menu {
+  padding: 0;
+  overflow: hidden;
+}
+
+.approval-status .project-in-exec .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -7px;
+}
+
+.approval-status .project-in-exec .cards-container .card {
+  max-width: 25%;
+  width: 25%;
+  flex: 1 1 25%;
+  border: none;
+  padding: 7px;
+  background-color: #e2e5ee;
+}
+
+.approval-status .project-in-exec .cards-container .card .card-inner {
+  height: 100%;
+  width: 100%;
+  border: 0.3px solid #a5b4cb34;
+  border-radius: 4px;
+  padding: 11px 14px;
+  transition: 0.3s all ease-in-out;
+}
+
+.approval-status .project-in-exec .cards-container .card:hover .card-inner {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+
+.approval-status .project-in-exec .cards-container .card .card-inner .header {
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.approval-status .project-in-exec .cards-container .card .card-inner .header p {
+  margin-bottom: 0 !important;
+  font-size: 12px;
+  line-height: 0.9em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body {
+  text-align: left;
+  padding: 0;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  h4 {
+  font-size: 15px;
+  line-height: 1em;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  margin-bottom: 12px;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .project-badge {
+  height: 21px;
+  padding: 0 10px;
+  border-radius: 15px;
+  background: #c9e0ff;
+  display: grid;
+  place-items: center;
+  /* max-width: 100px; */
+  width: 100%;
+  font-size: 10px;
+  line-height: 0.6em;
+  color: #0f2f81;
+  margin-bottom: 16px;
+}
+
+/* .approval-status
+  .project-in-exec
+  .cards-container
+  .card:nth-child(2)
+  .card-inner
+  .card-body
+  .project-badge {
+  background: #e4ffd8;
+  color: #288500;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card:nth-child(3)
+  .card-inner
+  .card-body
+  .project-badge {
+  background: #ffe7a1;
+  color: #eeb304;
+} */
+
+.approval-status .project-in-exec .cards-container .card .card-inner {
+  background: #fff;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .flex_row {
+  border-top: 0.5px solid #dbdbdb;
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .flex_row
+  .left
+  p,
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .flex_row
+  .right
+  p {
+  font-size: 10px;
+  line-height: 0.7em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #9a9a9a;
+  margin-bottom: 8px !important;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .flex_row
+  .left
+  h4,
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .flex_row
+  .right
+  h4 {
+  font-size: 12px;
+  line-height: 0.8em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .brandings
+  p {
+  font-size: 12px;
+  line-height: 0.8em;
+  font-family: "HEINEKEN Curve", sans-serif;
+  color: #0f2f81;
+  margin-bottom: 16px !important;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .brandings
+  .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .brandings
+  .flex
+  .image-container
+  img {
+  transform: scale(0.7);
+  cursor: wait;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .brandings
+  .flex
+  .ellipse {
+  cursor: pointer;
+}
+
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+}
+
+.check-box-wrapper p {
+  margin-bottom: 0 !important;
+  margin-right: 25px;
+  font-size: 14px;
+  font-family: "HEINEKEN-Bold";
+}
+
+.check-box-wrapper input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.check-box-wrapper label {
+
+
+
+  
+  margin-right: 30px;
+  font-size: 14px;
+  color: #707070;
+  cursor: pointer;
+  white-space: nowrap; 
+}
+
+.col-md-3.button {
+  padding-bottom: 0 !important;
+}
+
+.react-datepicker__input-container input[type="text"] {
+  width: 100%;
+  font-size: 14px;
+  padding: 7px 14px !important;
+}
+
+.accordion-box fieldset span,
+.accordion-box legend {
+  font-size: 10px;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold";
+  background: white;
+  margin-bottom: -8px;
+  width: unset;
+  margin-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-box fieldset span {
+  margin-bottom: 0;
+  top: -5px;
+  left: 0;
+  width: unset;
+  margin-left: 15px;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+}
+
+.css-1s2u09g-control,
+.accordion-box input {
+  border: 1px solid #00000061;
+  border-radius: 5px;
+}
+
+.date-type {
+  position: relative;
+}
+
+.date-type input {
+  padding: 7px;
+  border: 1px solid #00000061;
+  border-radius: 5px;
+}
+
+.date-type::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-image: url(./../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 0;
+  top: 8px;
+  transform: translate(-50%);
+}
+
+.accordion-body input,
+.accordion-box select,
+.accordion-box .react-datepicker-wrapper {
+  margin-bottom: 10px;
+}
+
+textarea.form-control {
+  min-height: 145px !important;
+  resize: none;
+}
+
+.btn-td,
+.icon-td {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icon-td div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-td img {
+  cursor: pointer;
+}
+
+.icon-td img:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Common Tab and Table Style */
+
+.react-tabs .react-tabs__tab-list {
+  margin: 0;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 0 24px;
+}
+
+.react-tabs .react-tabs__tab-list li {
+  list-style: none;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.react-tabs .react-tabs__tab-list li:focus {
+  outline: none;
+}
+
+.react-tabs .react-tabs__tab-list li:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #ee8a21;
+  opacity: 0;
+  transition: 0.3s all linear;
+}
+
+.react-tabs .react-tabs__tab-list li:hover::before,
+.react-tabs .react-tabs__tab-list li.react-tabs__tab--selected:before {
+  opacity: 1;
+}
+
+.react-tabs .react-tabs__tab-list li.react-tabs__tab--selected {
+  color: #ee8a21;
+}
+
+.react-tabs .react-tabs__tab-list li:not(:last-child) {
+  margin-right: 65px;
+}
+
+.react-tabs .react-tabs__tab-panel {
+  transition: 0.3s all ease-in-out;
+}
+
+.react-tabs .react-tabs__tab-panel .table .table-caption {
+  text-align: left;
+  line-height: 42px;
+  height: 42px;
+  padding: 0px 25px;
+  font-size: 14px;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.react-tabs .react-tabs__tab-panel .table tr {
+  border: 0.5px solid #eaeaea;
+}
+
+.cp-table4 tr:nth-child(odd),
+.cp-table3 tr:nth-child(odd),
+.react-tabs .react-tabs__tab-panel .table tbody tr:nth-child(odd) {
+  background: #fafbff;
+}
+
+.react-tabs .react-tabs__tab-panel .table thead tr th {
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  white-space: nowrap;
+  padding: 0px 25px;
+}
+
+.table tr .black-bold {
+  color: #000;
+}
+
+.table tr .blue-bold {
+  color: #0f2f81;
+}
+
+.table tr .blue-bold span {
+  color: #000;
+  font-weight: 400;
+}
+
+.table th img {
+  margin-left: 10px;
+}
+
+.table td {
+  height: 42px;
+  font-size: 13px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  /* line-height: 30px; */
+  padding: 3px 25px;
+  border: none;
+  white-space: nowrap;
+}
+
+.table td .table-btn {
+  font-size: 12px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  /* max-width: 80px; */
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  cursor: auto;
+  transition: 0.3s all ease-in-out;
+}
+
+.table td .approved {
+  background-color: #e5ffb2 !important;
+  color: #288500 !important;
+}
+
+.table td .pending {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+  padding: 0 5px !important;
+}
+
+.table td .completed {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+  padding: 0 5px !important;
+}
+
+.table td .rejected {
+  background: #ffe5e5 !important;
+  color: #ff1010 !important;
+}
+
+.table td .cancelled {
+  background: #ffe5e5 !important;
+  color: #ff1010 !important;
+}
+
+.table td .draft {
+  background: #c7e3ee !important;
+  color: #2f0be6 !important;
+  padding: 0 5px !important;
+}
+
+fieldset .common-select {
+  font-size: 10px !important;
+  color: hsl(0, 0%, 20%);
+}
+
+/* Common Tab and Table Style End */
+
+.table > :not(caption) > * > * {
+  background-color: unset !important;
+}
+
+button.save-btn {
+  background-color: #0f2f81 !important;
+  color: white;
+  border: transparent;
+  min-width: 70px;
+  border-radius: 6px;
+  height: 35px;
+  font-size: 12px;
+  transition: 0.3s all ease-in-out;
+}
+
+button.save-btn:hover {
+  background: transparent !important;
+  border: 1px solid #0f2f81;
+  color: #0f2f81;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border: 1px solid #eaeaea;
+  border-radius: 11px;
+}
+
+.form-control:disabled {
+  border: 0;
+}
+
+.css-1s2u09g-control {
+  border-color: #00000061 !important;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row > * {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.admin-table th {
+  font-family: "HEINEKEN-Bold";
+  color: #0f2f81;
+  font-size: 12px;
+  padding: 12px 0;
+}
+
+.admin-table tr:nth-child(odd) {
+  background-color: #fafbff;
+}
+
+.admin-table td {
+  font-size: 12px;
+  font-family: "HEINEKEN Curve";
+}
+
+.fourth-acc button fieldset {
+  max-width: 212px;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.fourth-acc .row {
+  align-items: baseline;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.green-badge,
+.red-badge {
+  max-width: 60px;
+  width: 100%;
+  height: 24px;
+  border-radius: 15px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.green-badge {
+  background-color: #e4ffd8;
+  color: #288500;
+}
+
+.red-badge {
+  background-color: #ffc4aa;
+  color: #ff2e57;
+  padding: 0 35px;
+}
+
+.fourth-acc .col-md-3 {
+  max-width: 211px;
+  width: 100%;
+}
+
+.Blue-validation {
+  background-color: #f0f4ff;
+  color: #0f2f81;
+  font-size: 10px;
+  padding: 8px 10px;
+  width: auto;
+  margin: 10px 0;
+}
+
+.textarea-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textarea-head p {
+  font-size: 12px;
+  font-family: "HEINEKEN-Bold";
+  margin-right: 5px;
+  white-space: nowrap;
+  margin-bottom: 0 !important;
+}
+
+.textarea-head span {
+  display: inline-block;
+  font-size: 12px;
+  color: #ceb6b6;
+  white-space: nowrap;
+}
+
+.dropdow-input textarea {
+  min-height: 113px !important;
+  border: transparent;
+}
+
+.dropdow-input .css-1s2u09g-control {
+  border: transparent;
+}
+
+.dropdow-input {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.form-btn {
+  display: flex;
+}
+
+.form-btn .white-btn,
+.form-btn .blue-btn,
+.form-btn .disabled {
+  max-width: 130px;
+  width: 100%;
+  font-size: 12px;
+  font-family: "HEINEKEN Curve";
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  margin-right: 15px;
+  transition: 0.38s;
+}
+
+.form-btn .white-btn {
+  background-color: #fff;
+  color: #0f2f81;
+  border: 1px solid #0f2f81;
+}
+
+.form-btn .blue-btn {
+  background-color: #0f2f81;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.form-btn .disabled {
+  color: #fff;
+  border: 1px solid transparent;
+  background: #b1c7ff;
+}
+
+.form-btn .white-btn:hover {
+  background-color: #0f2f81;
+  color: #fff;
+}
+
+.form-btn .blue-btn:hover {
+  background-color: white;
+  color: #0f2f81;
+  border-color: #0f2f81;
+}
+
+.fourth-acc .css-1s2u09g-control,
+.fourth-acc .css-1pahdxg-control {
+  flex-wrap: nowrap;
+}
+
+.admin-table {
+  overflow-x: auto;
+}
+
+.table > :not(:first-child) {
+  border: none;
+}
+
+fieldset {
+  position: relative;
+}
+
+fieldset {
+  padding: 0 !important;
+}
+
+body > div[class^=" css-"] {
+  z-index: 99;
+}
+
+div[class^=" css-"][class$="-menu"] {
+  margin-top: 1px;
+}
+
+fieldset {
+  padding: 0 !important;
+}
+
+/* Project Evalaution */
+
+.projectEvaluationWrapper .accordion-collapse {
+  margin-bottom: 40px;
+}
+
+.projectEvaluationWrapper .accordion-body {
+  padding: 0;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button
+  .accordian-head-first {
+  display: block;
+  width: 100%;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button
+  .accordian-head-first
+  p {
+  font-size: 14px;
+  line-height: 1.4em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button
+  .accordian-head-first
+  h2 {
+  font-size: 18px;
+  line-height: 1.25em;
+  color: #0f2f81;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr {
+  border: 0px solid transparent;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table {
+  margin-bottom: 0;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  th {
+  font-size: 12px;
+  line-height: 0.8em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td:first-child {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+  font-size: 13px;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+  color: #363636;
+  font-size: 12px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  white-space: nowrap;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td
+  .actual {
+  height: 30px;
+  min-width: 94px;
+  width: 100%;
+  border: none;
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding-left: 14px;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td
+  .actual:focus {
+  border: none;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td
+  .display {
+  height: 30px;
+  display: block;
+  min-width: 204px;
+  width: 100%;
+  outline: none;
+  padding: 0;
+  border-radius: 4px;
+  border: none;
+  background: #f4f4f4 !important;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td
+  .display:focus {
+  border: none;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td
+  input {
+  border: 1px solid #e0dfdf;
+  margin-bottom: 0;
+  padding: 5px 5px;
+}
+
+.projectEvaluationWrapper .accordion-box .accordion .accordion-item .margin16 {
+  margin-bottom: 16px !important;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  th {
+  height: 42px;
+  line-height: 42px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0px 25px;
+  color: #0f2f81;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  thead
+  tr {
+  background: #fafbff;
+}
+
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  th,
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr
+  td {
+  padding: 0px 25px;
+  height: 42px;
+  line-height: 42px;
+  white-space: nowrap;
+}
+
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr:nth-child(even) {
+  background: #fafbff;
+}
+
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body
+  .table
+  tr:nth-child(odd) {
+  background: #fff;
+}
+
+.projectEvaluationWrapper
+  .accordion-box.expanse
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body {
+  padding: 0;
+  overflow: auto;
+}
+
+.main .page {
+  position: relative;
+  flex: 4 1;
+  max-width: calc(100% - 213px);
+  width: 100%;
+}
+
+.table.admin-table {
+  min-width: 500px;
+}
+
+/* Project Evaluation CSS End */
+
+/* New Project CSS  */
+
+.new-project {
+  padding: 26px 22px;
+}
+
+/* .new-project .accordion-item {
+  overflow: hidden;
+} */
+
+.new-project .css-1s2u09g-control,
+.new-project .css-1pahdxg-control {
+  min-height: 35px !important;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.new-project .css-1hb7zxy-IndicatorsContainer {
+  height: 35px;
+}
+
+.new-project .fourth-acc .row {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.new-project .fourth-acc .css-1s2u09g-control,
+.new-project .fourth-acc .css-1pahdxg-control {
+  margin-bottom: 0;
+}
+
+.new-project .dropdow-input textarea {
+  min-height: 100px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.new-project .button.save-btn {
+  margin: 0;
+}
+
+.new-project .select-row .css-1s2u09g-control {
+  margin-bottom: 0;
+}
+
+.new-project a {
+  color: #0f2f81;
+}
+
+.new-project .w100 {
+  min-width: 80px;
+}
+
+.new-project .accordion-body {
+  padding: 15px 12px;
+}
+
+.new-project .form-header .row h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.new-project .form-header .row p {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #9a9a9a;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.new-project .form-header .copy-input input[type="email"] {
+  font-size: 10px;
+  line-height: 1.1;
+  color: #9a9a9a;
+  height: 36px;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.new-project .project-budget {
+  overflow: auto;
+}
+
+.new-project #floatingTextarea {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+/* New Project CSS End */
+
+/* Project Evaluation Page CSS  */
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-header
+  ul {
+  max-width: 900px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-header
+  ul
+  li {
+  list-style: none;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .promotions {
+  padding: 0 !important;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .table
+  tr:first-child
+  th {
+  color: #000;
+  height: 42px;
+  padding: 0 25px;
+  font-size: 14px;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .table
+  tr
+  td:first-child {
+  max-width: unset;
+  width: 20%;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .table
+  tr:nth-child(even) {
+  background: #fafbff;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .table
+  tr
+  td {
+  height: 42px;
+  padding: 0 25px;
+  min-width: 120px;
+  white-space: nowrap;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .custom-timeline {
+  height: auto;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+}
+
+.projectEvaluationWrapper
+  .accordion-box
+  .accordion
+  .accordion-item
+  .accordion-collapse
+  .accordion-body.promotions
+  .table
+  tr
+  .blue {
+  color: #0f2f81;
+}
+
+.accordion-body.customTimeline ul li b {
+  font-size: 12px;
+  line-height: 13px;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  white-space: nowrap;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 20px;
+}
+
+.back-link a:hover {
+  color: #000;
+}
+
+.back-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.back-link a::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(45deg);
+  right: calc(100% - 15px);
+  top: 6px;
+}
+
+.create-project li.breadcrumb-item:nth-child(even) {
+  background-color: green;
+}
+
+.create-project li.breadcrumb-item:nth-child(odd):after {
+  border-color: #fff;
+}
+
+.create-project li.breadcrumb-item:nth-child(even) a {
+  color: #fff;
+}
+
+.create-project .accordian-head-first span {
+  font-size: 18px;
+  color: #0f2f81;
+  margin-bottom: 0;
+}
+
+.mid-box {
+  background: #fff 0% 0% no-repeat padding-box;
+  border: 1px solid #eaeaea;
+  border-radius: 11px;
+  padding: 15px;
+}
+
+/* Trade Offer Page */
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 11px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 10px;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers:nth-child(2) {
+  padding: 0;
+  overflow: auto;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .form-title {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .form-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .form-group div {
+  position: relative;
+  flex: 1 1 300px;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  label:not(.radio-btn) {
+  position: absolute;
+  background: #fff;
+  top: -5px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 13px;
+  color: #0f2f81;
+  padding: 0 4px;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  .radio-btn {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 1em;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  input:not(input[type="radio"]) {
+  max-width: 495px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 14px 10px 60px 10px;
+  border: 1px solid #00000061;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  div
+  .radio-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 185px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  div
+  .radio-wrapper
+  div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  div
+  .radio-wrapper
+  input[type="radio"] {
+  accent-color: #288501;
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+  line-height: 1em;
+  color: #707070;
+  font-family: "HEINEKEN Curve", sans-serif;
+  cursor: pointer;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  .radio-wrapper
+  div:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .form-group
+  .radio-wrapper
+  div
+  label {
+  top: 0;
+  font-size: 14px;
+  line-height: 1em;
+  color: #707070;
+  padding: 0;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .table {
+  margin-bottom: 0px;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .table thead th {
+  border: none;
+  height: 42px;
+  line-height: 2.4em;
+  margin: 0;
+  padding: 0 34px;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .table tbody tr {
+  height: 42px;
+  line-height: 2.4em;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .table
+  tbody
+  tr:nth-child(odd) {
+  background: #fafbff;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .table td {
+  border: none;
+  padding: 0 47px;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .table
+  tbody
+  .table-context
+  td {
+  color: #0f2f81;
+  font-size: 12px;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.upload {
+  margin-right: 8px;
+  width: 28px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff2e5;
+  border-radius: 7px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .containers .table .upload-area {
+  font-size: 12px;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .table
+  .upload-area
+  td {
+  padding: 5px 47px;
+  white-space: nowrap;
+}
+
+#uploadedFilename {
+  text-decoration: underline;
+}
+
+#uploadFile {
+  display: none;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .containers
+  .table
+  .upload-area
+  .addRow {
+  color: #0f2f81;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .button-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .button-container button,
+.changeRequest .button-container button {
+  max-width: 129px;
+  width: 100%;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid #0f2f81;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  background: #fff;
+  color: #0f2f81;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-right: 22px;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+
+.tradeOfferWrapper .form-holder .form-wrapper .button-container button:hover,
+.changeRequest .button-container button:nth-child(2):hover {
+  background: #0f2f81;
+  color: #fff;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .button-container
+  button:nth-child(2),
+.changeRequest .button-container button:nth-child(1) {
+  background: #0f2f81;
+  color: #fff;
+  margin-right: 0;
+  transition: 0.3s all linear;
+}
+
+.changeRequest .button-container button:nth-child(1) {
+  margin-right: 23.5px;
+}
+
+.tradeOfferWrapper
+  .form-holder
+  .form-wrapper
+  .button-container
+  button:nth-child(2):hover,
+.changeRequest .button-container button:nth-child(1):hover {
+  color: #0f2f81;
+  background: #fff;
+}
+
+/* Create PRoject */
+
+.create-project .form-control:disabled {
+  background-color: #e9ecef !important;
+  opacity: 1;
+}
+
+.create-project .extra-row .item-wrapper {
+  align-items: center;
+}
+
+.create-project .form-header .row h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.create-project .accordion-body input,
+.create-project .accordion-box select,
+.create-project .accordion-box .react-datepicker-wrapper {
+  margin-bottom: 0;
+}
+
+.create-project table {
+  min-width: 500px;
+}
+
+.ilogo {
+  position: relative;
+}
+
+.Exp-acc .accordion-button span::after,
+.cp-table3 tr th span::after,
+.ilogo span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/info.svg);
+  background-repeat: no-repeat;
+  margin-left: 6px;
+  background-position: center;
+  z-index: 1;
+}
+
+.react-datepicker-popper {
+  z-index: 2 !important;
+}
+
+.table.admin-table td,
+.table.admin-table th {
+  padding: 6px;
+  /* text-align: left; */
+}
+
+.form-btn {
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.create-project .form-btn {
+  justify-content: center;
+}
+
+.create-project .form-btn button {
+  white-space: nowrap;
+  margin-right: 25px;
+}
+
+.create-project table th,
+.create-project table th,
+.create-project table td,
+.create-project table td {
+  padding: 7px 10px;
+}
+
+.create-project table th {
+  font-size: 12px;
+  line-height: 1.1;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.create-project .file-attachment,
+.create-project .project-reviewers,
+.create-project .approver-flow {
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.create-project .select-reviewer {
+  font-size: 12px;
+  line-height: 1.1;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.create-project .css-14el2xx-placeholder {
+  color: #fff;
+}
+
+.create-project .cp-table tr td:first-child {
+  font-size: 13px;
+  font-family: "HEINEKEN-Bold";
+}
+
+.create-project .cp-table2 tr td:first-child {
+  color: #0f2f81;
+  font-size: 15px;
+  font-family: "HEINEKEN-Bold";
+}
+
+.create-project .cp-table input {
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.create-project .breadcrumb-container .breadcrumb {
+  flex-wrap: nowrap;
+}
+
+.cp-table3 th {
+  font-size: 14px;
+  font-family: "HEINEKEN-Bold" !important;
+}
+
+.cp-table3 tr:nth-child(2),
+.cp-table3 tr:nth-child(2) input {
+  font-family: "HEINEKEN-Bold" !important;
+  color: #0f2f81;
+}
+
+.cp-table3 tr:nth-child(3) input,
+.cp-table3 tr:nth-child(4) input,
+.cp-table3 tr:nth-child(5) input {
+  font-family: "HEINEKEN Curve";
+}
+
+.main-box.create-project {
+  padding: 0px 20px;
+}
+
+.mid-box {
+  margin-bottom: 15px;
+}
+
+.Exp-acc .accordion-button span {
+  font-family: "HEINEKEN-Bold";
+  position: relative;
+}
+
+table.cp-table3.table,
+table.cp-table4.table {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+table.cp-table4.table tr:first-child th {
+  font-family: "HEINEKEN-Bold";
+  color: #0f2f81;
+}
+
+.extra-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+/* .create-project .css-b62m3t-container {
+  max-width: 104px;
+} */
+
+#grand-total {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+#grand-total span {
+  font-family: "HEINEKEN-Bold";
+  margin-right: 5px;
+}
+
+.total-num {
+  background-color: #fff2e5;
+  color: #ee8a21;
+  font-size: 13px;
+  font-family: "HEINEKEN-Bold";
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.total-num:not(:last-child) {
+  margin-right: 25px;
+}
+
+.file-link a {
+  color: #000000;
+}
+
+ul.ui-sortable li {
+  list-style: none;
+}
+
+ul#sortable li.ui-state-default.ui-sortable-handle {
+  max-width: 100px;
+  width: 100%;
+  background: #ffff;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.main-box.create-project
+  .approval-status-card
+  .timeline-holder
+  .timeline
+  li
+  .timeline-title {
+  margin-top: 20px;
+}
+
+.main-box.create-project .reorder-title {
+  font-size: 12px;
+  line-height: 1.1;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  font-weight: 600;
+}
+
+/* Project Detail Page Design Start */
+
+.project-review .alert-toast {
+  display: flex;
+  align-items: center;
+  margin: 6px 0 25px 0;
+}
+
+.project-review .alert-toast h2 {
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.project-review .alert-toast .notifier {
+  display: flex;
+  align-items: center;
+  max-width: 289px;
+  height: 29px;
+  width: 100%;
+  border-radius: 4px;
+  padding: 9px 7px;
+  background: #fff0f0;
+}
+
+.project-review .alert-toast .notifier p {
+  display: flex;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ff1010;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.project-review .alert-toast .notifier p #info-icon {
+  height: 13px;
+  width: 13px;
+  margin-right: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #ff1010;
+  display: block;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+}
+
+.project-review .padding-0 {
+  padding: 0 !important;
+}
+
+.project-review .blocks,
+.changeRequest .blocks {
+  background: #fff;
+  border-radius: 11px;
+  border: 1px solid #eaeaea;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.project-review .blocks.margin-0 {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
+.project-review .blocks .table {
+  margin-bottom: 0;
+}
+
+.project-review .blocks .table tr,
+.project-review .blocks .table tr th {
+  border: none;
+  height: 42px;
+  line-height: 20px;
+  padding: 0 25px;
+}
+
+.project-review .blocks .table thead tr:nth-child(even) {
+  background: #fff;
+}
+
+.project-review .blocks .table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.project-review .blocks .default-table tr {
+  height: 42px;
+}
+
+.project-review .blocks .default-table tr td:not(:first-child) {
+  width: 200px;
+}
+
+.project-review .blocks .default-table th,
+.changeRequest .blocks .default-table th {
+  height: 42px;
+  line-height: 42px;
+  padding: 0px 25px;
+  white-space: nowrap;
+}
+
+.project-review .blocks .default-table td,
+.changeRequest .blocks .default-table td {
+  font-size: 12px;
+  line-height: 42px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  height: 42px;
+  min-width: 150px;
+  padding: 0px 25px;
+  white-space: nowrap;
+}
+
+.project-review .blocks .default-table .blue-bold,
+.changeRequest .blocks .default-table .blue-bold {
+  font-size: 15px;
+  line-height: 17px;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  white-space: nowrap;
+}
+
+.project-review .blocks .default-table .black-bold,
+.changeRequest .blocks .default-table .black-bold {
+  font-size: 13px;
+  line-height: 15px;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  white-space: nowrap;
+}
+
+.project-review .expanses {
+  margin-bottom: 0;
+}
+
+.project-review .grand-total {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px 0px;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 17px 25px;
+}
+
+.project-review .grand-total .d-flex {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.project-review .grand-total span {
+  padding: 10px 0;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .grand-total .total-num {
+  padding: 10px 25px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.project-review .table-first tr {
+  display: flex;
+}
+
+.project-review .table-first tr td:not(:last-child) {
+  max-height: 180px;
+}
+
+.project-review .table-first th,
+.project-review .table-first td {
+  width: 33%;
+  padding: 10px 25px;
+}
+
+.project-review .table-first thead tr th {
+  font-size: 14px;
+  line-height: 1em;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  color: #0f2f81;
+}
+
+.project-review .table-first thead tr:nth-child(2) th {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.project-review .table-first thead tr:nth-child(2) th p {
+  font-size: 18px;
+  line-height: 1.3em;
+  color: #000;
+  font-weight: normal;
+  font-family: "HEINEKEN-Curve", sans-serif;
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+
+.project-review .table-first thead tr:nth-child(2) th button {
+  background: #c9e0ff;
+  color: #0f2f81;
+  border: none;
+  border-radius: 15px;
+  font-size: 10px;
+  line-height: 0.6em;
+  padding: 8px 15px;
+  cursor: default;
+}
+
+.project-review .table-first tbody th,
+.project-review .table-first tbody td {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+}
+
+.project-review .table-first tbody td .blue-bold {
+  font-size: 12px;
+  line-height: 0.8em;
+  color: #0f2f81;
+  margin-bottom: 10px !important;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .table-first tbody td .black-normal {
+  font-size: 12px;
+  line-height: 0.87em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.project-review .table-first tbody td .desc {
+  font-size: 12px;
+  line-height: 17px;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.project-review .table tbody tr .blue-bold {
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .project-objectives,
+.project-review .project-strategy {
+  background: #fff;
+  padding: 20px 28px;
+  border-radius: 11px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 10px;
+}
+
+.project-review .project-objectives .table-caption,
+.project-review .project-strategy .table-caption {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1em;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .project-objectives .cards-container,
+.project-review .project-strategy .cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.project-review .project-objectives .cards-container .cards {
+  padding: 5px;
+  flex: 1 1 30%;
+}
+
+.project-review .project-objectives .cards-container .cards .blue-bold {
+  font-size: 12px;
+  line-height: 13px;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .project-objectives .cards-container .cards p,
+.project-review .project-strategy .cards-container .cards p {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.project-review .project-strategy .cards-container .cards {
+  flex: 1 1 50%;
+  padding: 5px;
+}
+
+.project-review center {
+  margin: 10px 0 20px 0;
+}
+
+.project-review center b {
+  font-size: 15px;
+  line-height: 1.06rem;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .project-strategy .cards-container .cards .blue-bold {
+  font-size: 12px;
+  line-height: 13px;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.project-review .table tfoot th {
+  padding: 10px 25px;
+}
+
+.project-review .customize tbody tr td:last-child {
+  white-space: unset;
+  min-width: 300px;
+  max-width: 550px;
+  padding: 10px 25px;
+}
+
+.project-review .customize tbody tr td:last-child p {
+  line-height: 17px;
+  margin-bottom: 0 !important;
+}
+
+.project-review .accordion-collapse.collapse {
+  overflow: auto;
+}
+
+.project-review .accordion-box .accordion-item {
+  margin-bottom: 0;
+}
+
+.project-review .accordion-box .accordion-item .accordian-head-first p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  margin-bottom: 0 !important;
+}
+
+.project-review .accordion-body.time-line {
+  margin-top: 20px;
+  max-width: 620px;
+  width: 100%;
+}
+
+.project-review .accordion-body.time-line ul {
+  position: relative;
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px;
+}
+
+.project-review .accordion-body.time-line ul::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 52%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 85%;
+  background-color: #e8e8e8;
+}
+
+.project-review .accordion-body.time-line ul li {
+  position: relative;
+  list-style: none;
+  min-width: 120px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.project-review .accordion-body.time-line ul li:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: url("../images/Subtraction\ 5.svg");
+  cursor: pointer;
+}
+
+.project-review .accordion-body.time-line ul li.active::before {
+  background: url("../images/bcheck.svg");
+}
+
+.project-review .accordion-body.time-line ul li b {
+  font-size: 12px;
+  line-height: 13px;
+  white-space: nowrap;
+}
+
+.projectDetail {
+  padding: 18px 23px;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.projectDetail .top-bar {
+  margin-bottom: 20px;
+}
+
+.projectDetail .top-bar a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all linear;
+}
+
+.projectDetail .top-bar #backButton {
+  height: 15px;
+  width: 15px;
+  display: block;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+
+.projectDetail .top-bar h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  cursor: pointer;
+}
+
+.projectDetail .page-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 29px;
+}
+
+.projectDetail .page-title h4 {
+  font-size: 18px;
+  line-height: 1.25em;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Project Detail Page Design End */
+
+/* Change Request Form Page Design Start */
+
+.changeRequest .accordian-head-second {
+  margin-left: 50px;
+}
+
+.changeRequest .accordian-head-second {
+  display: flex;
+  align-items: center;
+}
+
+.changeRequest .accordian-head-second span {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.changeRequest .accordian-head-second .custom-badge {
+  max-width: 69px;
+  width: 100%;
+  border-radius: 15px;
+  margin-left: 15px;
+  height: 21px;
+  background: #c9e0ff;
+  color: #0f2f81;
+  border: none;
+  font-size: 10px;
+  line-height: 11px;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.changeRequest .ilogo span::after {
+  display: none;
+}
+
+.changeRequest .accordian-head-first .wrapper {
+  max-width: 650px;
+  width: 100%;
+}
+
+.changeRequest .accordian-head-first .wrapper .fieldset {
+  margin-left: 25px;
+}
+
+.changeRequest .accordian-head-first .wrapper .col-md-4:last-child {
+  margin-left: 20px;
+}
+
+.changeRequest .accordian-head-first .customize {
+  background: linear-gradient(180deg, #fff 50%, #e9ecef 50%);
+  padding: 0 3px;
+}
+
+.changeRequest .accordian-head-first .disabled {
+  min-width: 200px;
+  max-width: 210px;
+  width: 100%;
+}
+
+.changeRequest input {
+  height: 36px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+  margin: 0;
+}
+
+.changeRequest input:focus {
+  border-color: #00000061;
+}
+
+.changeRequest .css-1s2u09g-control {
+  height: 36px;
+}
+
+.changeRequest .css-6j8wv5-Input {
+  margin: 0;
+  padding: 0;
+}
+
+.changeRequest .center img {
+  margin-left: 6px;
+}
+
+.changeRequest .project-budget-amount {
+  margin-left: 25px;
+}
+
+.changeRequest .acc-contents a {
+  display: inline-block;
+  color: #0f2f81;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.changeRequest .css-14el2xx-placeholder {
+  color: #fff;
+}
+
+.changeRequest .acc-contents .remark-text {
+  min-height: 75px !important;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #363636;
+  padding: 8px;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.changeRequest .acc-contents .table thead th,
+.changeRequest .acc-contents .table tbody td {
+  padding: 0 25px;
+  height: 42px;
+  white-space: nowrap;
+  border: 0;
+}
+
+.changeRequest .acc-contents .table thead th.blue-bold,
+.changeRequest .acc-contents .table tbody td {
+  font-size: 12px;
+  line-height: 3;
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.changeRequest .blocks .default-table tr td:not(:first-child) {
+  width: 315px;
+}
+
+.changeRequest .acc-contents .table tbody td {
+  color: #000;
+  font-family: "HEINEKEN Curve", sans-serif;
+}
+
+.changeRequest .acc-contents .table tbody td img {
+  cursor: pointer;
+}
+
+.changeRequest .acc-contents .table tbody td .m-16 {
+  margin-right: 16px;
+}
+
+.changeRequest .acc-contents .table tbody .blue-bold {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "HEINEKEN-Bold", sans-serif;
+  color: #0f2f81;
+}
+
+.changeRequest .acc-contents .item-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.changeRequest .acc-contents .item-wrapper .row-item {
+  min-width: 135px;
+}
+
+.changeRequest .acc-contents .item-wrapper .row-item:last-child {
+  text-align: right;
+}
+
+.changeRequest .acc-contents .item-wrapper .row-item .save-btn {
+  min-width: 70px;
+  margin-right: 0;
+}
+
+.changeRequest .acc-content-wrapper .acc-contents .lowopacity {
+  opacity: 0.26;
+}
+
+.changeRequest .acc-content-wrapper .acc-contents .badge-col {
+  display: flex;
+  align-items: center;
+}
+
+.changeRequest .acc-contents #grand-total {
+  padding: 20px 15px;
+}
+
+.changeRequest .button-container {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.changeRequest .acc-content-wrapper .acc-contents .col-md-6 .black-bold {
+  font-size: 12px;
+  line-height: 1.1;
+  color: #000;
+  font-family: "HEINEKEN-Bold", sans-serif;
+}
+
+.changeRequest .acc-content-wrapper .blocks {
+  padding: 10px 0;
+}
+
+.changeRequest .input-disabled {
+  margin-left: 27px;
+  min-width: 120px;
+}
+
+/* Change Request Form Page Design End */
+
+/* Error Page Component Design */
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../images/404_bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 50%, transparent);
+}
+
+.main-container .contents {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.main-container .contents h1 {
+  font-size: 16em;
+  font-weight: 900;
+  line-height: 0.8;
+  margin-bottom: 0;
+  text-shadow: 5px 5px 0 rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+.main-container .contents h1 span {
+  color: #0f2f81;
+  animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.main-container .contents p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 12px !important;
+  text-align: center;
+}
+
+.main-container .contents a {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  text-decoration: none;
+  background: #0f2f81;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-container .contents a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #ee8a21;
+  transition: 0.3s all ease-in-out;
+}
+
+.main-container .contents a:hover::before {
+  width: 100%;
+}
+
+.input-boxtabing {
+  position: relative;
+  padding: 10px 0px;
+}
+
+fieldset.accordingtab-inputbox {
+  position: absolute;
+  z-index: 9;
+  left: 150px;
+  top: 17px;
+}
+
+.new-project .project-budget .col-md-3 span {
+  background-color: transparent;
+}
+
+.content:last-child hr {
+  display: none;
+}
+
+.approval-status .project-in-exec .basic-multi-select.css-b62m3t-container {
+  max-width: 175px;
+  width: 100%;
+}
+
+.approval-status .project-in-exec .css-b62m3t-container .css-1pahdxg-control,
+.approval-status .project-in-exec .css-b62m3t-container .css-1s2u09g-control {
+  background: rgba(255, 255, 255, 0.75);
+  color: white !important;
+}
+
+.approval-status .project-in-exec .css-qc6sy-singleValue,
+.approval-status
+  .project-in-exec
+  .css-b62m3t-container
+  .css-1s2u09g-control
+  .select__value-container.select__value-container--has-value.css-319lph-ValueContainer {
+  color: rgb(12, 2, 84);
+}
+
+.approval-status
+  .project-in-exec
+  .css-b62m3t-container
+  .css-1s2u09g-control
+  .select__single-value.css-qc6sy-singleValue {
+  color: rgb(12, 2, 84);
+}
+
+.common-select option {
+  font-size: 15px;
+}
+
+.disabled > span {
+  background: none !important;
+}
+
+/* .select__control.css-1s2u09g-control {
+  min-width: 260px;
+} */
+
+.select-color .select__multi-value__remove .css-tj5bde-Svg {
+  fill: #000;
+}
+
+p.select-reviewer {
+  font-size: 15px !important;
+  margin-bottom: 14px !important;
+  text-align: left;
+}
+
+.css-qc6sy-singleValue {
+  text-align: left;
+}
+
+/* Loader Css */
+
+/* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 9999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(255 255 255 / 60%);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: "";
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 150ms infinite linear;
+  -moz-animation: spinner 150ms infinite linear;
+  -ms-animation: spinner 150ms infinite linear;
+  -o-animation: spinner 150ms infinite linear;
+  animation: spinner 150ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgb(0 0 0 / 75%) 1.5em 0 0 0,
+    rgb(0 0 0 / 75%) 1.1em 1.1em 0 0, rgb(0 0 0 / 75%) 0 1.5em 0 0,
+    rgb(0 0 0 / 75%) -1.1em 1.1em 0 0, rgb(0 0 0 / 75%) -1.5em 0 0 0,
+    rgb(0 0 0 / 75%) -1.1em -1.1em 0 0, rgb(0 0 0 / 75%) 0 -1.5em 0 0,
+    rgb(0 0 0 / 75%) 1.1em -1.1em 0 0;
+  box-shadow: rgb(0 0 0 / 75%) 1.5em 0 0 0, rgb(0 0 0 / 75%) 1.1em 1.1em 0 0,
+    rgb(0 0 0 / 75%) 0 1.5em 0 0, rgb(0 0 0 / 75%) -1.1em 1.1em 0 0,
+    rgb(0 0 0 / 75%) -1.5em 0 0 0, rgb(0 0 0 / 75%) -1.1em -1.1em 0 0,
+    rgb(0 0 0 / 75%) 0 -1.5em 0 0, rgb(0 0 0 / 75%) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*updat-css*/
+
+.react-datepicker-popper .react-datepicker__navigation-icon {
+  top: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.Blue-validation {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.Blue-validation img {
+  margin-right: 5px;
+}
+
+.create-project form#create-course-form .item-wrapper .row-item {
+  width: 14%;
+}
+
+.create-project form#create-course-form .item-wrapper .row-item select {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #00000061;
+  border-radius: 5px;
+  height: 38px;
+  padding-right: 30px !important;
+}
+
+.text-danger {
+  font-size: 12px;
+  text-align: left;
+}
+
+input[type="file"] {
+  border: 1px solid #00000061;
+  border-radius: 5px;
+  height: 38px;
+}
+
+.accordion-box fieldset p.text-danger {
+  font-size: 12px;
+  margin: 0px 0px 2px !important;
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+}
+
+.basic-info .check-box-wrapper + p.text-danger {
+  font-size: 12px;
+  margin: -10px 0px 5px;
+  text-align: left;
+}
+
+.basic-info .check-box-wrapper p.text-danger {
+  font-size: 12px;
+  font-family: ui-monospace;
+}
+
+span.text-danger {
+  font-size: 12px;
+}
+
+input#react-select-15-input {
+  color: #fff !important;
+}
+
+.accordion-box .react-datepicker-wrapper {
+  margin-bottom: 0px;
+}
+
+.basic-info .mt-3.row fieldset input,
+.basic-info .mt-3.row fieldset select {
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.new-project .css-1s2u09g-control input {
+  height: auto !important;
+}
+
+form#create-course-form fieldset input,
+form#create-course-form fieldset select {
+  margin-bottom: 18px;
+}
+
+.expense-btn {
+  margin-bottom: 18px;
+}
+
+.project-badge.trade_marketing {
+  background: #ffe7a1 !important;
+  color: #eeb304 !important;
+}
+
+.project-badge.sales {
+  background: #f68606 !important;
+  color: #fff !important;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .image-container
+  span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+table.cp-table4.table {
+  white-space: unset;
+}
+
+.logout-icon img {
+  transform: rotate(180deg);
+}
+
+.accordion-item .accordion-button {
+  padding: 0;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.accordion-item h2.accordion-header {
+  background-color: #fff;
+  padding: 20px 15px;
+  display: flex;
+}
+
+.approval-status .approval-status-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: auto;
+  max-height: 350px;
+  overflow: auto;
+}
+
+.approval-status .approval-status-container .approval-status-card {
+  flex: 0 0 25%;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info {
+  width: 100%;
+  height: 100%;
+  border: 0.3px solid #a5b4cb34;
+  padding: 10px;
+  background: rgba(0, 0, 255, 0.02);
+}
+
+.approval-status
+  .approval-status-container
+  .approval-status-card
+  .project-info
+  .action
+  a {
+  text-decoration: none;
+  color: #0f2f81;
+  font-size: 14px;
+}
+
+.runtime-approval-page {
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  /* width: calc(102% - 50px);
+  margin: 50px 25px; */
+  border-radius: 4px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); */
+}
+
+.add-action-page .item-wrapper {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.add-action-page form {
+  background: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.add-action-page .item-wrapper .row-item {
+  flex: 33.33%;
+  text-align: left;
+  padding: 5px;
+}
+
+.add-action-page .item-wrapper .row-item fieldset span {
+  display: block;
+}
+
+.add-action-page .item-wrapper .row-item fieldset textarea {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.add-action-page .item-wrapper .row-item.action {
+  align-items: center;
+  display: flex;
+}
+
+.add-action-page .item-wrapper .row-item.action button {
+  margin: 0 20px;
+}
+
+.add-action-page .item-wrapper .row-item.action a {
+  text-decoration: none;
+  background: #0f2f81;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.next-btn {
+  text-decoration: none;
+  background: #0f2f81;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.add-action-button {
+  text-decoration: none;
+  background: rgb(231, 134, 134);
+  color: #0f2f81;
+
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.rejected-comments {
+  height: 100px;
+  overflow: auto;
+}
+
+.rejected-comments p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.view-details a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #0f2f81;
+  font-weight: 600;
+}
+
+.approver-project-list {
+  padding: 1px 1px !important;
+}
+
+.add-action-page.project-review {
+  border-radius: 4px;
+  margin: 50px 25px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 25%);
+}
+
+.add-action-page.project-review > * {
+  background: #fff;
+  box-shadow: none;
+}
+
+a.add-action-button.take-action {
+  background: #0f2f81;
+  color: #fff;
+  font-weight: 100;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1.2px solid transparent;
+  transition: 0.3s all ease;
+}
+
+a.add-action-button.take-action:hover {
+  background: #fff;
+  color: #0f2f81;
+  border: 1.2px solid #0f2f81;
+}
+
+.react-tabs .react-tabs__tab-panel .table td .pending {
+  background-color: #f4daad;
+  color: #f00c0c;
+}
+
+.react-tabs .react-tabs__tab-panel .table td .completed {
+  background-color: #f4daad;
+  color: #f00c0c;
+}
+
+p.project-badge-approved {
+  color: rgb(29, 143, 29) !important;
+}
+
+p.project-badge-rejected {
+  color: rgb(232, 22, 46) !important;
+}
+
+p.project-badge-cancelled {
+  color: rgb(232, 22, 46) !important;
+}
+
+p.project-badge-draft {
+  color: #0f2f81 !important;
+}
+
+p.project-badge-completed {
+  color: #e78628 !important;
+}
+
+p.project-badge-pending {
+  color: #f17e27 !important;
+}
+
+.change-request {
+  padding: 15px;
+}
+
+.change-request .wrapper {
+  width: 100%;
+}
+
+.change-request .budget-amount {
+  flex-wrap: nowrap;
+}
+
+.change-request fieldset {
+  text-align: left !important;
+}
+
+.change-request fieldset span {
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.change-request .actions-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.change-request .actions-btn .button {
+  margin: 5px;
+  border: 1px solid transparent !important;
+  background-color: #0f2f81;
+  color: white;
+  text-decoration: none;
+  border: transparent;
+  min-width: 70px;
+  border-radius: 6px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  transition: 0.3s all ease-in-out;
+}
+
+.change-request .actions-btn .button:hover {
+  background: transparent;
+  border: 1px solid #0f2f81 !important;
+  color: #0f2f81;
+}
+
+.change-request .centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.change-req-date input {
+  font-size: 14px !important;
+}
+
+.change-req-date .date-type::after {
+  top: 58%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.change-req-date .accordion-collapse.collapse {
+  overflow: unset !important;
+}
+
+.total-project {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.table tr .blue-bold {
+  color: #0f2f81 !important;
+}
+
+.change-request tr:nth-child(even) {
+  background: #a7dbeb12;
+}
+
+.change-request tr:nth-child(odd) {
+  background: #fcf3c312;
+}
+
+a.Project-ID {
+  text-decoration: none;
+  color: #0f2f81;
+  font-weight: 600;
+}
+
+.table td .Fresh {
+  background: #d0f5f0 !important;
+  color: #078937 !important;
+}
+
+.table td .Change {
+  background: #fad2fc !important;
+  color: #320225 !important;
+}
+
+a.take-action-table {
+  background: #0f2f81;
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1.2px solid transparent;
+  transition: 0.3s all ease;
+  border-radius: 4px;
+}
+
+a.take-action-table:hover {
+  background: #fff;
+  color: #0f2f81;
+  border: 1.2px solid #0f2f81;
+}
+
+.form-control:disabled {
+  background-color: #e9ecef !important;
+  opacity: 1;
+}
+
+th.project-remark {
+  width: 250px;
+}
+
+input.Form-control.actualExpenseBudget.form-control {
+  width: 100px;
+}
+
+input.Form-control.expenseRemark.form-control {
+  width: 260px;
+}
+
+.table td .Close {
+  background: #f2e9a6 !important;
+  color: #e64e07 !important;
+}
+
+.button-container {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 20px;
+}
+
+.create-project {
+  margin-bottom: 30px;
+}
+
+.table td .closed {
+  background-color: #e5ffb2 !important;
+  color: #288500 !important;
+}
+
+/* Disscussion Board Css */
+
+span.tag {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  height: max-content;
+}
+
+.tag.green {
+  background: #e5ffb2;
+  color: green;
+}
+
+.tag.orange {
+  background: #fff2e5;
+  color: #ee8a21;
+}
+
+ul.notification-list {
+  list-style-type: none;
+}
+
+.notification-list label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.bell-icon {
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+  background: #eff3ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.notif-item {
+  display: flex;
+  width: 100%;
+}
+
+.notif-item .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+span b {
+  font-weight: 400;
+  color: #0f2f81;
+}
+
+.status span {
+  margin-right: 25px;
+  white-space: nowrap;
+}
+
+ul.notification-list li {
+  border-bottom: 1px solid #e2e9ee;
+  padding: 15px;
+}
+
+/* discussion form  css*/
+.admin-content1 {
+  padding: 20px 35px;
+  max-width: 1100px;
+  width: 100%;
+  background-color: white;
+}
+
+.admin-content1 h3 {
+  font-size: 20px;
+}
+
+.admin-content1 .head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.admin-content1 .head span.tag {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  height: max-content;
+}
+
+.tag.blue {
+  background: #c9e0ff;
+  color: blue;
+}
+
+.tag.green {
+  background: #e5ffb2;
+  color: green;
+}
+
+.head-left {
+  display: flex;
+}
+
+.date-section {
+  display: flex;
+}
+
+.date-section .date-box {
+  margin-left: 20px;
+}
+
+.date-section input {
+  border: 0;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.date-section label {
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.admin-content1 h3 p {
+  margin-top: 10px;
+  color: #0f2f81;
+}
+
+.project-keys {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.project-keys table {
+  min-width: 1000px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.project-keys table p {
+  font-weight: 800;
+  color: #0f2f81;
+  margin-bottom: 10px;
+}
+
+.Inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.comments {
+  padding: 20px 40px;
+  padding-left: 0;
+  margin-top: 20px;
+  border-top: 1px solid #f5e9e9;
+}
+
+.f-word {
+  background: #5cd3b7;
+  color: white;
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.f-word p {
+  font-size: 24px;
+}
+
+.typ-msg input {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 7px;
+}
+
+.typ-msg {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.pre-msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.pre-msg p {
+  max-width: 800px;
+  width: 100%;
+  font-size: 16px;
+  color: #9a9a9a;
+  word-break: break-all;
+  padding: 2px;
+}
+
+.pre-msg label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.pre-msg span.time {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.table td .NotApplicable {
+  background: #d4daf9 !important;
+  color: #020f49 !important;
+  padding: 0 5px !important;
+}
+
+.notification-list {
+  overflow-y: auto;
+  max-height: 490px;
+}
+
+button.SendButton {
+  border: none;
+  background-color: white;
+}
+
+.pre-innermsg {
+  text-align: left;
+}
+
+.ver-scroll {
+  max-height: 480px;
+  overflow: scroll;
+  padding-right: 20px;
+  overflow-x: hidden;
+}
+
+.ver-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ver-scroll::-webkit-scrollbar-track {
+  background-color: #dee2e6;
+  border-radius: 15px;
+}
+
+.ver-scroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 15px;
+}
+
+.f-word.A {
+  background: #cf0645;
+}
+
+.f-word.B {
+  background: #17aec2;
+}
+
+.f-word.C {
+  background: #617108;
+}
+
+.f-word.D {
+  background: #07167b;
+}
+
+.f-word.E {
+  background: #7d02a2;
+}
+
+.f-word.F {
+  background: #069dbb;
+}
+
+.f-word.G {
+  background: #9e0310;
+}
+
+.f-word.H {
+  background: #4dc60c;
+}
+
+.f-word.V {
+  background: #1b843b;
+}
+
+.f-word.L {
+  background: #652002;
+}
+
+.f-word.T {
+  background: #eb4a06;
+}
+
+.f-word.Y {
+  background: #dcd21a;
+}
+
+.f-word.P {
+  background: #68dc1a;
+}
+
+img.mx-1.message-action-icon {
+  cursor: pointer;
+}
+
+table.dataTable tbody td {
+  height: 42px !important;
+  font-size: 13px !important;
+  font-family: "HEINEKEN Curve", sans-serif !important;
+  padding: 2px 11px !important;
+  border: none !important;
+  white-space: nowrap !important;
+}
+
+table.dataTable thead th {
+  color: #0f2f81 !important;
+}
+
+button.dt-button.buttons-excel.buttons-html5.next-btn {
+  float: right;
+  margin-bottom: 5px;
+  border: none;
+}
+
+div#myTable_filter {
+  float: left;
+  margin-bottom: 14px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+table.dataTable th.dt-center,
+table.dataTable td.dt-center,
+table.dataTable td.dataTables_empty {
+  text-align: left !important;
+  font-weight: 600 !important;
+}
+
+.project-in-exec.project-report-list-section {
+  margin: 0px !important;
+}
+
+/* dt-btn styles */
+
+.dt-button-collection {
+  margin-top: 0 !important;
+}
+
+.dataTables_wrapper div[role="menu"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dataTables_wrapper div[role="menu"] button.dt-button.active {
+  background-color: white;
+  color: #020f49;
+  margin: 5px;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+
+.dataTables_wrapper div[role="menu"] button.dt-button:not(.active) {
+  background-color: rgb(12, 2, 84);
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+
+.dataTables_wrapper div[role="menu"] button.dt-button:hover {
+  background: black;
+  color: white;
+}
+
+button.dt-button.buttons-collection.buttons-colvis.next-btn {
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.dt-buttons {
+  text-align: right;
+}
+
+button.dt-button.buttons-excel.buttons-html5.next-btn,
+button.dt-button.buttons-collection.buttons-colvis.next-btn {
+  display: inline-block;
+  margin-right: 10px;
+  float: none;
+}
+
+.form-control:disabled {
+  margin-top: 5px !important;
+}
+
+/* For Datatable Css */
+td .pending {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+  padding: 0 5px !important;
+}
+
+td .approved {
+  background-color: #e5ffb2 !important;
+  color: #288500 !important;
+}
+
+td .closed {
+  background-color: #e5ffb2 !important;
+  color: #288500 !important;
+}
+
+td .cancelled {
+  background: #ffe5e5 !important;
+  color: #ff1010 !important;
+}
+
+td .rejected {
+  background: #ffe5e5 !important;
+  color: #ff1010 !important;
+}
+
+td .Fresh {
+  background: #d0f5f0 !important;
+  color: #078937 !important;
+}
+
+td .Close {
+  background: #f2e9a6 !important;
+  color: #e64e07 !important;
+}
+
+td .Change {
+  background: #fad2fc !important;
+  color: #320225 !important;
+}
+
+td .draft {
+  background: #c7e3ee !important;
+  color: #2f0be6 !important;
+  padding: 0 5px !important;
+}
+
+td .completed {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+  padding: 0 5px !important;
+}
+
+td .table-btn {
+  font-size: 12px;
+  font-family: "HEINEKEN Curve", sans-serif;
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  /* max-width: 80px; */
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  cursor: auto;
+  transition: 0.3s all ease-in-out;
+}
+
+div#myTable_filter {
+  float: right;
+}
+
+button.dt-button.buttons-excel.buttons-html5.next-btn,
+button.dt-button.buttons-collection.buttons-colvis.next-btn {
+  float: left !important;
+}
+
+/* Runtime Approval Css Timeline */
+
+.timeline-holder {
+  /* height: 100%; */
+  /* overflow: auto; */
+}
+
+.approval-status-card .timeline-holder .timeline {
+  position: static;
+  transform: unset;
+}
+
+.timeline-holder article {
+  margin-top: 20px;
+}
+
+.timeline-holder.approver-flow-user {
+  overflow: unset !important;
+}
+
+span.file-span {
+  cursor: pointer;
+}
+
+h6.CancelProjectStatus {
+  color: #d40000;
+  cursor: pointer;
+}
+
+.project-in-exec .table-responsive.dataTable {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.project-in-exec .table-responsive.dataTable tbody td {
+  text-align: left;
+}
+
+/* Temp Login CSS */
+
+.temp-login {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fd;
+}
+
+.login-form-temp {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.user-guide {
+  cursor: pointer;
+}
+
+#description {
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+input#newBudgetAmount {
+  background-color: #f5575759;
+}
+
+input.form-control.date-changeRequest {
+  background-color: #f5575759 !important;
+}
+
+.form-control.date-changeRequest {
+  background-color: #f5575759 !important;
+}
+
+span.discussion.completed {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+  padding: 0 5px !important;
+}
+
+span.discussion.approved {
+  background-color: #e5ffb2 !important;
+  color: #288500 !important;
+  padding: 0 5px !important;
+}
+
+.tag.completed {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+}
+
+.tag.pending {
+  background: #fff2e5 !important;
+  color: #ee8a21 !important;
+}
+
+span.tag.approved {
+  color: #288500 !important;
+  padding: 0 5px !important;
+}
+
+.projectEvaluationWrapper input.Form-control.form-control {
+  width: 120px;
+}
+
+a.take-action-table.old-project-disabled {
+  pointer-events: none;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner.delegated-card {
+  background: #c8ebf6e6;
+}
+
+.approval-status
+  .project-in-exec
+  .cards-container
+  .card
+  .card-inner
+  .card-body
+  .dept {
+  background: #ee8a21 !important;
+  width: 100px;
+  color: #fff;
+}
+
+.report-table td,
+.report-table th {
+  white-space: nowrap;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.ver-scroll-report {
+  /* max-height: 537px; */
+  overflow: auto;
+  padding-right: 20px;
+  overflow-x: hidden;
+}
+
+/* Project Overview Page CSS */
+
+.project-overview {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+.project-overview .blocks {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+}
+
+.project-overview .blocks:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.project-overview h6,
+.project-overview h5 {
+  font-weight: bold;
+  padding: 20px 20px 0 20px;
+}
+
+.project-overview.table-responsive {
+  overflow-x: auto;
+}
+
+.project-overview table.classic {
+  width: 100%;
+}
+
+.project-overview table.classic td,
+.project-overview table.classic th {
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+
+.project-overview table.classic td .blue {
+  color: #0f2f81;
+  font-family: "HEINEKEN-Bold";
+}
+
+.project-overview .card-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 0 -15px;
+}
+
+.project-overview .card-area.two-column .classic-card {
+  width: 50%;
+}
+
+.project-overview .card-area.three-column .classic-card {
+  width: 33.33%;
+}
+
+.project-overview .classic-card {
+  padding: 15px;
+  font-size: 13px;
+}
+
+.project-overview .classic-card b {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.project-overview .blocks.basic-information .classic-card b {
+  color: #0f2f81;
+}
+
+.project-overview table.classic.stripped tr th {
+  color: #0f2f81;
+  background: #14769413;
+  font-size: 14px;
+}
+
+.project-overview table.classic.stripped tr:nth-child(odd) td {
+  background: #14769413;
+}
+
+.project-overview .blocks header {
+  display: flex;
+  align-items: center;
+}
+
+.project-overview .blocks header h6 span {
+  display: block;
+}
+
+.project-overview .blocks header h6 span:first-child {
+  color: #0f2f81;
+  margin-bottom: 7px;
+}
+
+.project-overview .blocks header h6 span:last-child {
+  font-weight: normal;
+}
+
+.project-overview .table-action {
+  border-radius: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 5px 15px;
+  font-size: 10px;
+}
+
+.project-overview .table-action.lime {
+  background: #73ff0027;
+  color: #008000;
+}
+
+.project-overview .blocks .calulations {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.project-overview .blocks .calulations .calc {
+  color: orange;
+  font-weight: 600;
+}
+
+.project-overview .blocks .calulations .calc:first-child {
+  margin: 0 25px;
+}
+
+.project-overview
+  .blocks.strategy-execution
+  .card-area.two-column
+  .classic-card
+  b,
+.project-overview .blocks.heineken h5 {
+  color: #0f2f81;
+}
+
+.project-overview .blocks.file-attachment table.classic.stripped tr th {
+  width: 50%;
+}
+
+.project-overview .blocks.file-attachment .upload-area label {
+  padding: 3px 5px;
+  border-radius: 5px;
+  background: #ffbb0027;
+  cursor: pointer;
+}
+
+.project-overview .blocks.file-attachment .upload-area input[type="file"] {
+  display: none;
+}
+
+.project-overview .blocks.file-attachment .upload-area .file-name {
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.project-overview .blocks.profit th.default {
+  background: unset;
+}
+
+.project-overview .blocks.profit tr:nth-child(odd) td {
+  background: #fff !important;
+}
+
+.project-overview .blocks.profit tr:nth-child(even) td {
+  background: #14769413;
+}
+
+.project-overview h6 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+td.bold-text-finance {
+  font-weight: bold;
+}
+
+.project-overview .empty-field {
+  background: white !important;
+  border: 0 !important;
+  pointer-events: none;
+  text-align: center;
+  text-align: left;
+}
+
+.project-overview table.classic td,
+.project-overview table.classic.stripped.pro-budget-table td {
+  max-width: 100px !important;
+  word-break: break-word !important;
+  white-space: normal !important;
+  padding: 0px 12px !important;
+  text-align: left;
+  font-size: 13px;
+}
+
+.project-overview .card-inner p,
+.project-overview table.classic td p {
+  max-width: 100px !important;
+  word-break: break-word;
+  white-space: normal;
+  text-align: left;
+}
+
+.project-overview .table.over-view.cp-table.table h5,
+.project-overview td.bold-text-finance,
+.project-overview .card-inner p,
+.project-overview .classic-card b,
+.project-overview table.classic th {
+  text-align: left;
+}
+
+.project-overview .description .card-inner p {
+  max-width: 100% !important;
+}
+
+.over-view-section-table td {
+  height: auto !important;
+  padding: 0 15px;
+}
+
+.over-view-section-table input.Form-control.form-control.empty-field {
+  padding: 0px 8px;
+}
+
+.project-overview .mid-box table.cp-table2.over-view-section-table.table {
+  margin: 0;
+}
+
+.project-overview .over-view-section-table th {
+  text-align: left;
+  padding: 0 15px;
+}
+.project-overview .over-view-section-table h5 {
+  margin: 0;
+  padding: 8px 0 0;
+}
+.project-overview .mid-box {
+  padding: 8px 0;
+  margin-bottom: 3px;
+}
+.project-overview .approval-status-card .timeline-holder .timeline li {
+  font-size: 13px;
+}
+.table-responsive {
+  overflow-x: hidden !important;
+}
+section.ver-scroll-report .table-responsive {
+  overflow-x: auto !important;
+}
+.change-request a.Project-ID {
+  text-decoration: underline;
+  font-weight: 400;
+}
+table#myTable a.Project-ID {
+  font-weight: 400;
+} 
+
+.table-responsive {
+  overflow-x: auto !important;
+}

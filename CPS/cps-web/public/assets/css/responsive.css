@@ -1,0 +1,1128 @@
+@media only screen and (max-width: 1440px) {
+  .login .row .col-md-6 .login-form-container .login-head img {
+    max-width: 135px;
+    width: 100%;
+  }
+
+  .login
+    .row
+    .col-md-6
+    .login-form-container
+    .login-form-head
+    .form-heading
+    h3 {
+    margin: 12px 0;
+    line-height: 1.5em;
+    font-size: 22px;
+  }
+
+  .login .row .col-md-6 .login-form-container .login-form-head .form-heading p {
+    margin-bottom: 25px;
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+
+  .login
+    .row
+    .col-md-6
+    .login-form-container
+    .login-form
+    .main-form
+    .forgot-pass-link {
+    line-height: 1.5rem;
+  }
+
+  .login
+    .row
+    .col-md-6
+    .login-form-container
+    .login-form
+    .main-form
+    .login-btn-box {
+    margin-bottom: 10px;
+  }
+
+  .login
+    .row
+    .col-md-6
+    .login-form-container
+    .login-form
+    .main-form
+    .form-label {
+    font-size: 14px;
+  }
+
+  .login .row .col-md-6 .login-form-container {
+    margin: 0px auto;
+    padding: 18px;
+  }
+
+  .login .row .col-md-6 .right-box {
+    height: 100vh;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    div:first-child {
+    margin-right: 25px;
+  }
+
+  .changeRequest .accordion-body {
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .projectEvaluationWrapper .accordion-body {
+    overflow: auto;
+    padding: 10px !important;
+  }
+
+  .new-project .form-header .copy-input input[type="email"] {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  /* Overview Page */
+
+  .navbar.row .nav-left {
+    flex: 1 1 50%;
+    padding-right: 0;
+  }
+
+  .navbar.row .nav-middle {
+    padding-right: 0;
+    flex: 1 1 50%;
+  }
+
+  .navbar.row .nav-middle .searchbox-wrapper {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .navbar.row .nav-right {
+    flex: 1 1 100%;
+    margin-top: 10px;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .project-info {
+    width: 35%;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .timeline-holder {
+    width: 65%;
+  }
+
+  .approval-status .project-in-exec .cards-container .card {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .project-overview .card-area.three-column .classic-card {
+    width: 50%;
+  }
+
+  .new-project .breadcrumb-container {
+    margin: 10px 0 0 0;
+  }
+
+  .textarea-head {
+    flex-direction: column;
+  }
+
+  .textarea-head span {
+    margin-bottom: 10px;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .project-info {
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .timeline-holder {
+    margin-top: 32px;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .form-header {
+    display: block;
+  }
+
+  .fourth-acc .col-md-3 {
+    max-width: 129px;
+    width: 100%;
+  }
+
+  .accordion-box fieldset span,
+  .accordion-box legend {
+    font-size: 10px;
+    white-space: nowrap;
+    margin-left: 6px;
+    margin-bottom: -6px;
+  }
+
+  .green-badge,
+  .red-badge {
+    font-size: 7px;
+  }
+
+  .tradeOfferWrapper .form-holder .form-wrapper .containers {
+    padding: 15px;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    input:not(input[type="radio"]) {
+    max-width: unset;
+  }
+
+  .extra-row {
+    overflow-x: auto;
+  }
+
+  .extra-row .row-item {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .item-wrapper {
+    display: flex;
+    min-width: 800px;
+    width: 100%;
+    align-items: baseline;
+    padding-left: 5px;
+  }
+
+  .extra-row {
+    justify-content: unset;
+  }
+
+  .create-project .form-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .create-project .breadcrumb-container {
+    margin-top: 10px;
+  }
+
+  .projectEvaluationWrapper
+    .accordion-box.expanse
+    .accordion
+    .accordion-item
+    .accordion-collapse
+    .accordion-body
+    .table
+    th {
+    padding: 10px 25px;
+    text-indent: 0px;
+  }
+
+  .projectEvaluationWrapper
+    .accordion-box.expanse
+    .accordion
+    .accordion-item
+    .accordion-collapse
+    .accordion-body
+    .table
+    tr
+    td {
+    padding: 10px 25px;
+    text-indent: 0px;
+  }
+
+  .changeRequest .acc-content-wrapper .acc-contents .extra-row {
+    overflow-x: unset;
+  }
+
+  .changeRequest .fileuploadpanel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-container .contents {
+    right: 50px;
+  }
+
+  .main-container .contents h1 {
+    font-size: 12em;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    div:first-child {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 922px) {
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    div:first-child {
+    margin-right: 0;
+  }
+
+  .tradeOfferWrapper .form-holder .form-wrapper .containers .form-group div {
+    flex: 1 1 100%;
+  }
+
+  .tradeOfferWrapper .form-holder .form-wrapper .containers .table thead th,
+  .tradeOfferWrapper .form-holder .form-wrapper .containers .table td {
+    padding: 0 15px;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .table
+    .upload-area
+    td {
+    padding: 5px 15px;
+  }
+
+  .accordion-body.customTimeline {
+    overflow-x: auto;
+  }
+
+  .customTimeline ul {
+    min-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-overview .card-area.two-column .classic-card,
+  .project-overview .card-area.three-column .classic-card {
+    width: 100%;
+  }
+
+  .main .page {
+    max-width: calc(100% - 60px);
+  }
+
+  .login .row .col-md-6 .login-form-container {
+    padding: 25px;
+  }
+
+  .login .row .col-md-6 .login-form-container .login-form .main-form input {
+    height: 50px;
+  }
+
+  .login .row .col-md-6 .login-form-container {
+    max-width: unset;
+  }
+
+  /* Navbar */
+
+  .navbar.row .nav-middle .searchbox-wrapper {
+    margin-top: 10px;
+  }
+
+  /* Sidebar */
+
+  .approval-status,
+  .navbar.row {
+    padding: 10px 14px !important;
+  }
+
+  .main .sidebar-container {
+    max-width: 60px;
+    padding: 10px;
+  }
+
+  .main .sidebar-container .sidebar {
+    max-width: 40px;
+  }
+
+  .sidebar .navigations .nav-link {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .navbar.row .nav-right a:not(:last-child) {
+    margin-right: 7px;
+  }
+
+  .sidebar .navigations .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar .navigations .nav-link a {
+    font-size: 0;
+  }
+
+  .sidebar .logout .nav-link a {
+    font-size: 0;
+  }
+
+  .sidebar .navigations .nav-link a img {
+    margin-right: 0;
+    height: 18px;
+    width: 18px;
+  }
+
+  .content-area .top-bar #backButton {
+    height: 10px;
+    width: 10px;
+  }
+
+  .new-project {
+    padding: 10px 14px;
+  }
+
+  .new-project .basic-info .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-6,
+  .col-12 {
+    padding: 0 !important;
+  }
+
+  .new-project .project-strategy .col-md-6 {
+    margin-bottom: 20px;
+  }
+
+  .new-project .accordion-body input,
+  .new-project .accordion-box select,
+  .new-project .accordion-box .react-datepicker-wrapper {
+    margin-bottom: 10px !important;
+  }
+
+  .new-project .css-6j8wv5-Input {
+    margin: 0;
+    padding: 0;
+  }
+
+  .new-project .css-319lph-ValueContainer {
+    padding: 0 8px;
+  }
+
+  .textarea-head {
+    flex-direction: unset;
+  }
+
+  .new-project .project-budget .col-md-3,
+  .col-md-1 {
+    padding: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .new-project .project-budget .col-md-3 .css-1s2u09g-control {
+    margin-bottom: 10px;
+  }
+
+  .new-project .project-budget .col-md-1 {
+    width: 100% !important;
+  }
+
+  /* Overview Page */
+
+  .approval-status .dropdown.all-request .dropdown .dropdown-toggle {
+    width: unset;
+    max-width: unset;
+  }
+
+  /* Timeline  */
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .project-info {
+    width: 100%;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .timeline-holder {
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .timeline-holder
+    .timeline::before {
+    top: 40%;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .timeline-holder
+    .timeline
+    li
+    .timeline-title {
+    font-size: 0;
+  }
+
+  .approval-status .project-in-exec .header .title .heading {
+    font-size: 15px !important;
+    margin-bottom: 7px;
+  }
+
+  .approval-status .project-in-exec {
+    padding: 20px;
+  }
+
+  .approval-status .project-in-exec .execution {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .approval-status .project-in-exec .execution .dropdown {
+    justify-content: center;
+  }
+
+  .approval-status .project-in-exec .cards-container .card {
+    flex: 1 1 100%;
+  }
+
+  .approval-status .title {
+    font-size: 15px;
+  }
+
+  .projectDetail {
+    padding: 15px;
+  }
+
+  .react-tabs .react-tabs__tab-list {
+    padding: 0;
+  }
+
+  .react-tabs .react-tabs__tab-panel .table-light th,
+  .react-tabs .react-tabs__tab-panel .table-light td {
+    padding: 5px;
+  }
+
+  .react-tabs .react-tabs__tab-list li {
+    margin: 0 15px;
+  }
+
+  .react-tabs .react-tabs__tab-list li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .react-tabs .react-tabs__tab-panel .table-light .table-caption {
+    padding: 12px;
+  }
+
+  .copy-input input {
+    width: 200px;
+    padding-left: 30px;
+  }
+
+  .first-acc .row {
+    display: block;
+    width: 100%;
+  }
+
+  .fourth-acc .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    margin-bottom: 10px;
+  }
+
+  .first-acc .row .col-md-6 {
+    width: 100%;
+  }
+
+  .fourth-acc .row .col-md-3,
+  .fourth-acc .row .col-md-1 {
+    max-width: 100%;
+  }
+
+  .green-badge,
+  .red-badge {
+    margin-left: 0;
+  }
+
+  .first-acc .css-b62m3t-container {
+    margin-bottom: 10px;
+  }
+
+  .content-area {
+    padding: 10px 14px;
+  }
+
+  .projectEvaluationWrapper
+    .accordion-box
+    .accordion
+    .accordion-item
+    .accordion-collapse
+    .accordion-body
+    .table
+    tr
+    td
+    input {
+    min-width: 100px;
+  }
+
+  .project-review .project-objectives .cards-container .cards {
+    flex: 1 1 50%;
+  }
+
+  .project-review .project-objectives .table-caption,
+  .project-review .project-strategy .table-caption {
+    margin-bottom: 0;
+  }
+
+  .project-review .project-objectives,
+  .project-review .project-strategy {
+    padding: 25px;
+  }
+
+  .create-project .blue-select .css-1s2u09g-control {
+    margin-bottom: 20px;
+  }
+
+  /* Change Request Page */
+
+  .changeRequest .acc-content-wrapper .acc-contents {
+    overflow: auto;
+  }
+
+  .changeRequest .acc-content-wrapper .acc-contents fieldset {
+    margin-bottom: 10px;
+  }
+
+  .accordian-head-first span {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .changeRequest .project-budget-amount,
+  .changeRequest .accordian-head-first .wrapper .col-md-4:last-child {
+    margin-left: 0;
+  }
+
+  .changeRequest .accordian-head-first .disabled {
+    margin-bottom: 10px;
+    max-width: unset;
+  }
+
+  .changeRequest #grand-total .d-flex {
+    align-items: center !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .changeRequest .blue-select {
+    margin-bottom: 16px;
+  }
+
+  .changeRequest .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-6,
+  .col-md-12 {
+    padding: 0 !important;
+  }
+
+  .main-container .contents h1 {
+    font-size: 10em;
+  }
+
+  .main-container {
+    background: url("../images/404_bg_2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .main-container .contents {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .main-container .contents h1 {
+    font-size: 7em;
+  }
+
+  .main-container .contents p {
+    font-size: 16px;
+  }
+
+  .main-container .contents a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .create-project .overflow-sm {
+    overflow: auto;
+  }
+
+  .copy-input input {
+    width: 150px;
+    padding-left: 30px;
+    font-size: 12px;
+  }
+
+  textarea.form-control {
+    min-height: 100px !important;
+    font-size: 13px;
+    resize: none;
+    margin-bottom: 10px;
+  }
+
+  .accordion-box fieldset span,
+  .accordion-box legend {
+    font-size: 8px;
+  }
+
+  .form-header .row p {
+    margin: 0px 10px;
+  }
+
+  .d-flex.check-box-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .tradeOfferWrapper .form-holder .form-wrapper .button-container button {
+    max-width: 100px;
+  }
+
+  .project-review .grand-total .total-num {
+    padding: 7px;
+  }
+
+  .project-review .project-objectives .cards-container .cards {
+    flex: 1 1 100%;
+  }
+
+  .project-review .project-strategy .cards-container .cards {
+    flex: 1 1 100%;
+  }
+
+  .changeRequest .accordion-button {
+    flex-wrap: wrap;
+  }
+
+  .changeRequest .accordian-head-first {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .changeRequest .accordian-head-first span {
+    margin-bottom: 10px;
+  }
+
+  .changeRequest .accordian-head-second {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project-review .grand-total .total-num {
+    margin: 0px;
+    margin: 5px;
+  }
+
+  .form-btn .white-btn,
+  .form-btn .blue-btn,
+  .form-btn .disabled {
+    margin: 0 10px 10px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar.row .nav-middle .searchbox-wrapper {
+    height: 34px;
+  }
+
+  .navbar.row .nav-right .button {
+    height: 34px;
+    line-height: 30px;
+  }
+
+  .approval-status .approval-status-container .approval-status-card {
+    padding: 10px;
+  }
+
+  .approval-status .project-in-exec {
+    padding: 10px;
+  }
+
+  .form-btn .white-btn,
+  .form-btn .blue-btn {
+    max-width: 90px;
+    padding: 8px;
+  }
+
+  .fourth-acc button fieldset {
+    max-width: 135px;
+    width: 100%;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .navbar.row .nav-left .admin-name {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .navbar.row .nav-left .designation {
+    margin-bottom: 0 !important;
+    font-size: 12px;
+  }
+
+  .navbar.row .nav-middle .searchbox-wrapper {
+    height: 30px;
+    margin-top: 0px;
+  }
+
+  .navbar.row .nav-left,
+  .navbar.row .nav-middle {
+    flex: 1 1 100%;
+  }
+
+  .navbar.row .nav-middle .searchbox-wrapper img {
+    right: 0px;
+  }
+
+  .navbar.row .nav-right {
+    margin-top: 7px;
+    justify-content: center;
+  }
+
+  .navbar .nav-right .dropdown-icon {
+    left: 40px;
+  }
+
+  .navbar.row .nav-right .button {
+    font-size: 0px;
+    height: 34px;
+    max-width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar.row .nav-right .icon {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar.row .nav-right a:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .navbar.row .nav-middle .searchbox-wrapper .admin-search {
+    padding: 0 30px 0 0;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0;
+    font-size: 12px;
+  }
+
+  .navbar.row .nav-middle .searchbox-wrapper .admin-search::placeholder {
+    font-size: 12px;
+  }
+
+  .navbar.row .nav-right .profile-img .profile-image-holder {
+    font-size: 14px;
+  }
+
+  .form-header .row {
+    flex-wrap: wrap;
+  }
+
+  .navbar.row .nav-right .button span {
+    font-size: 18px;
+  }
+
+  .create-project .accordian-head-first span {
+    font-size: 13px;
+  }
+
+  .approval-status .title-one,
+  .approval-status .dropdown {
+    width: 100%;
+  }
+
+  .approval-status .title-one {
+    margin-bottom: 7px;
+  }
+
+  .approval-status .dropdown {
+    justify-content: flex-start;
+  }
+
+  .approval-status .project-in-exec .header .title,
+  .approval-status .project-in-exec .header .search-container {
+    width: 100%;
+  }
+
+  .approval-status
+    .approval-status-container
+    .approval-status-card
+    .project-info
+    .project-title
+    h3 {
+    font-size: 13px;
+  }
+
+  .projectDetail .page-title h4 {
+    font-size: 16px;
+  }
+
+  .react-tabs .react-tabs__tab-list li,
+  .react-tabs .react-tabs__tab-panel th {
+    font-size: 13px;
+  }
+
+  .react-tabs .react-tabs__tab-panel .table-caption {
+    line-height: 1.9em;
+    padding: 5px;
+  }
+
+  .react-tabs .react-tabs__tab-panel .table td {
+    font-size: 12px;
+  }
+
+  .fourth-acc .row .col-md-3,
+  .fourth-acc .row .col-md-1 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .badge-col {
+    width: 50% !important;
+  }
+
+  .admin-table td {
+    font-size: 9px;
+  }
+
+  .projectEvaluationWrapper
+    .accordion-box
+    .accordion
+    .accordion-item
+    .accordion-header
+    .accordion-button
+    .accordian-head-first
+    h2 {
+    font-size: 16px;
+  }
+
+  .projectEvaluationWrapper
+    .accordion-box
+    .accordion
+    .accordion-item
+    .margin16 {
+    margin-bottom: 6px;
+  }
+
+  .tradeOfferWrapper .form-holder .form-wrapper .containers .form-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    div:first-child {
+    margin-bottom: 15px;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    label:not(.radio-btn) {
+    position: unset;
+    padding: 0;
+  }
+
+  .tradeOfferWrapper
+    .form-holder
+    .form-wrapper
+    .containers
+    .form-group
+    div
+    .radio-wrapper
+    input[type="radio"] {
+    margin-right: 7px;
+  }
+
+  .changeRequest #grand-total span,
+  .changeRequest #grand-total .total-num {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .login .row .col-md-6 .login-form-container .login-head {
+    height: unset;
+  }
+
+  .admin-table td {
+    font-size: 6px;
+  }
+
+  .accordion-body {
+    padding: 0px 10px !important;
+  }
+
+  .changeRequest .accordion-body {
+    padding: 10px !important;
+  }
+
+  .form-header h3 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .form-header .row {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .form-header .row p {
+    margin: 0 auto;
+    color: #bfbfbf;
+  }
+
+  .copy-input {
+    margin-top: 10px;
+  }
+
+  .breadcrumb-container {
+    justify-content: center;
+  }
+
+  .form-control:disabled {
+    font-size: 12px;
+  }
+
+  button.accordion-button {
+    padding: 11px;
+  }
+
+  .accordian-head-first span {
+    font-size: 12px;
+  }
+
+  .check-box-wrapper p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .check-box-wrapper label {
+    width: 70%;
+  }
+
+  .admin-table th {
+    font-size: 9px;
+    white-space: nowrap;
+    padding: 0;
+  }
+
+  .form-control:disabled {
+    width: 70px;
+  }
+
+  .check-box-wrapper p {
+    margin-right: 0px;
+  }
+
+  .first-acc .row {
+    margin-top: 10px;
+  }
+
+  .accordion-box fieldset span,
+  .accordion-box legend {
+    font-size: 10;
+    font-size: 10px;
+  }
+
+  .accordion-box .first-acc .react-datepicker-wrapper {
+    margin-bottom: 0px;
+  }
+
+  .d-flex.check-box-wrapper {
+    padding: 0 10px;
+  }
+
+  .create-project .form-header {
+    flex-wrap: wrap;
+  }
+
+  .create-project ol.breadcrumb {
+    flex-wrap: nowrap;
+  }
+
+  .create-project .accordian-head-first span {
+    white-space: unset;
+    font-size: 13px;
+  }
+
+  .create-project .cp-table tr td:first-child {
+    font-size: 10px;
+  }
+
+  .create-project .cp-table2 tr td:first-child,
+  .create-project table th,
+  .create-project table th,
+  .create-project table td,
+  .create-project table td {
+    font-size: 10px;
+  }
+
+  .create-project table th,
+  .create-project table th,
+  .create-project table td,
+  .create-project table td {
+    padding: 3px 10px;
+  }
+
+  .blue-select .css-b62m3t-container {
+    margin-bottom: 15px;
+  }
+}
